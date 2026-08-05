@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1080, initial-scale=1">
+  <title>NICE SO Story — Slide 01</title>
+  <link rel="stylesheet" href="../../../../shared/styles/system.css">
+  <style>
+    .content { position: absolute; left: 72px; right: 72px; top: 225px; z-index: 2; }
+    .headline { margin-top: 0; max-width: 936px; font-size: 74px; }
+    .sub { margin-top: 36px; padding-top: 31px; border-top: 1px solid var(--line); max-width: 870px; font-size: 29px; line-height: 1.42; color: #343945; }
+    .sub strong { color: var(--ink); }
+    .store-photo { position:absolute; left:0; right:0; bottom:0; height:610px; overflow:hidden; border-top:2px solid var(--primary); background:#d9dcda; }
+    .store-photo img { position:absolute; left:0; bottom:0; width:100%; height:100%; display:block; object-fit:cover; object-position:center bottom; transform:scale(1.12); transform-origin:center bottom; }
+    .store-photo::after { content:""; position:absolute; inset:0; pointer-events:none; background:linear-gradient(to bottom,rgba(255,255,255,.10),transparent 22%,transparent 76%,rgba(20,26,35,.12)); }
+    .swipe { position: absolute; left: 72px; bottom: 58px; display: flex; align-items: center; gap: 12px; color: rgba(32,35,43,.58); font-size: 15px; text-transform: uppercase; letter-spacing: .13em; }
+    .swipe svg { width: 24px; height: 24px; }
+  </style>
+</head>
+<body>
+  <main class="canvas">
+    <div class="glow red"></div><div class="glow amber"></div>
+    <header class="topbar">
+      <img class="gs-logo" src="../../../../shared/assets/gs-logo-colour.png" alt="Global Sources Indonesia">
+    </header>
+
+    <section class="content">
+      <h1 class="headline"><span class="highlight">Dikira brand</span><span class="line">impor Korea,</span><span class="line">ternyata milik lokal!</span></h1>
+      <p class="sub">Rahasia raksasa retail Indonesia yang <strong>diam-diam tembus 200+ gerai</strong> di kota kecil.</p>
+    </section>
+
+    <div class="store-photo" aria-label="Foto bagian depan toko NICE SO">
+      <img src="../assets/niceso-store.png" alt="Papan nama NICE SO pada bagian depan toko">
+    </div>
+
+    <div class="swipe">
+      <svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      Swipe ke kiri
+    </div>
+    <footer class="footer" style="justify-content:flex-end"><span>01 / 04</span></footer>
+  </main>
+</body>
+</html>
