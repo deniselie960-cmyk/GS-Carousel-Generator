@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1080, initial-scale=1">
+  <title>EIGER Brand Longevity — Slide 01</title>
+  <link rel="stylesheet" href="../../../../shared/styles/system.css">
+  <style>
+    .composition { --composition-gap: 24px; }
+    .content { display: flex; flex-direction: column; align-items: flex-start; }
+    .headline { margin: 0; max-width: 936px; font-size: 70px; }
+    .headline .highlight { font-size: 0.98em; }
+    .headline .long-line { font-size: 0.79em; white-space: nowrap; }
+    .supporting-copy {
+      max-width: 870px;
+      margin-top: 28px;
+      padding-top: 26px;
+      border-top: 1px solid var(--line);
+    }
+    .subheadline {
+      margin: 0;
+      font-size: 29px;
+      line-height: 1.35;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+    }
+    .body-copy { margin-top: 10px; font-size: 25px; line-height: 1.44; }
+    .photo-stack {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1200 / 676;
+      margin-top: 30px;
+      isolation: isolate;
+    }
+    .photo-stack::before,
+    .photo-stack::after {
+      content: "";
+      position: absolute;
+      inset: 7px 12px -7px;
+      z-index: -2;
+      border: 1px solid rgba(32, 35, 43, 0.10);
+      background: rgba(255, 255, 255, 0.88);
+      box-shadow: 0 20px 46px rgba(42, 58, 87, 0.13);
+      transform: rotate(-1.15deg);
+    }
+    .photo-stack::after {
+      inset: 4px 7px -4px;
+      z-index: -1;
+      transform: rotate(.65deg);
+      background: rgba(248, 247, 243, 0.96);
+    }
+    .store-photo {
+      position: absolute;
+      inset: 0;
+      margin: 0;
+      padding: 9px;
+      overflow: hidden;
+      background: var(--white);
+      border: 1px solid rgba(32, 35, 43, 0.12);
+      box-shadow: 0 20px 50px rgba(42, 58, 87, 0.15);
+    }
+    .store-photo img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: center;
+    }
+    .swipe {
+      position: absolute;
+      left: var(--page-x);
+      bottom: 48px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: rgba(32,35,43,.58);
+      font-size: 14px;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+    .swipe svg { width: 23px; height: 23px; }
+  </style>
+</head>
+<body>
+  <main class="canvas">
+    <div class="glow red"></div><div class="glow amber"></div>
+
+    <div class="composition composition--left">
+      <header class="topbar">
+        <img class="gs-logo" src="../../../../shared/assets/gs-logo-colour.png" alt="Global Sources Indonesia">
+      </header>
+
+      <section class="content">
+        <h1 class="headline">
+          <span class="highlight">Kenapa Eiger</span>
+          <span class="line">Tetap Relevan</span>
+          <span class="line long-line">Selama Puluhan Tahun?</span>
+        </h1>
+
+        <div class="supporting-copy">
+          <p class="subheadline">Eiger Bukan Sekedar Brand Outdoor.</p>
+          <p class="body-copy">Mereka adalah bukti bahwa brand yang dibangun dengan benar bisa <strong>bertahan puluhan tahun.</strong></p>
+        </div>
+
+        <div class="photo-stack">
+          <figure class="store-photo">
+            <img src="../assets/eiger-storefront.png" alt="Fasad gerai EIGER Tropical Adventure">
+          </figure>
+        </div>
+      </section>
+    </div>
+
+    <div class="swipe">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      Swipe ke kiri
+    </div>
+    <footer class="footer" style="justify-content:flex-end"><span>01 / 04</span></footer>
+  </main>
+</body>
+</html>

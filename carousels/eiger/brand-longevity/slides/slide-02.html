@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1080, initial-scale=1">
+  <title>EIGER Brand Longevity — Slide 02</title>
+  <link rel="stylesheet" href="../../../../shared/styles/system.css">
+  <style>
+    .composition { --composition-gap: 22px; }
+    .glow.red {
+      right: -250px;
+      top: 150px;
+      background: radial-gradient(circle, rgba(117, 190, 255, 0.24), transparent 68%);
+    }
+    .glow.amber { opacity: .7; }
+    .headline { margin: 0; max-width: 936px; font-size: 68px; }
+    .headline .highlight { font-size: .91em; }
+    .intro {
+      max-width: 875px;
+      margin: 27px 0 0;
+      font-size: 25px;
+      line-height: 1.44;
+      letter-spacing: -.015em;
+      color: rgba(255, 255, 255, .84);
+    }
+    .intro strong { color: var(--white); }
+    .focus-chart {
+      position: relative;
+      width: 100%;
+      height: 430px;
+      margin-top: 28px;
+      overflow: hidden;
+      border-radius: 32px;
+      background: linear-gradient(145deg, rgba(9, 43, 91, .32), rgba(255, 255, 255, .08));
+      border: 1px solid rgba(255, 255, 255, .22);
+      box-shadow: inset 0 1px rgba(255, 255, 255, .18), 0 24px 54px rgba(8, 37, 79, .22);
+    }
+    .chart-topline {
+      position: absolute;
+      top: 27px;
+      left: 30px;
+      right: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: rgba(255, 255, 255, .68);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    .year-range {
+      padding: 9px 14px;
+      border-radius: 999px;
+      color: var(--white);
+      background: rgba(255, 255, 255, .10);
+      border: 1px solid rgba(255, 255, 255, .18);
+      letter-spacing: .10em;
+    }
+    .focus-chart svg { width: 100%; height: 100%; display: block; }
+    .axis-label {
+      position: absolute;
+      top: 171px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 14px 22px;
+      border-radius: 15px;
+      color: var(--ink);
+      background: var(--amber);
+      box-shadow: 0 14px 28px rgba(8, 37, 79, .22);
+      font-size: 18px;
+      line-height: 1;
+      font-weight: 900;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .branch-label {
+      position: absolute;
+      right: 53px;
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: rgba(255, 255, 255, .55);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .10em;
+      text-transform: uppercase;
+    }
+    .branch-label::before {
+      content: "×";
+      display: grid;
+      place-items: center;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      color: rgba(255, 255, 255, .72);
+      border: 1px solid rgba(255, 255, 255, .30);
+    }
+    .branch-label.fashion { top: 100px; }
+    .branch-label.lifestyle { bottom: 53px; }
+    .year {
+      position: absolute;
+      bottom: 102px;
+      color: var(--white);
+      font-size: 16px;
+      font-weight: 900;
+      letter-spacing: .04em;
+    }
+    .year.start { left: 42px; }
+    .year.end { right: 42px; }
+    .trust-result {
+      position: absolute;
+      left: 50%;
+      bottom: 25px;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      color: rgba(255, 255, 255, .82);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .trust-result strong { color: var(--amber); }
+    .trust-result::before,
+    .trust-result::after {
+      content: "";
+      width: 54px;
+      height: 1px;
+      background: rgba(255, 255, 255, .24);
+    }
+    .closing {
+      max-width: 900px;
+      margin: 25px 0 0;
+      color: rgba(255, 255, 255, .76);
+      font-size: 23px;
+      line-height: 1.42;
+      letter-spacing: -.01em;
+    }
+    .closing strong { color: var(--white); }
+  </style>
+</head>
+<body>
+  <main class="canvas canvas--blue">
+    <div class="glow red"></div><div class="glow amber"></div>
+
+    <div class="composition composition--left">
+      <header class="topbar">
+        <img class="gs-logo" src="../../../../shared/assets/gs-logo-white.png" alt="Global Sources Indonesia">
+      </header>
+
+      <section class="content">
+        <h1 class="headline">
+          <span class="highlight">Konsistensi yang</span>
+          <span class="line">Bikin Mereka Kuat</span>
+        </h1>
+
+        <p class="intro">Dari <strong>1989</strong> sampai sekarang, Eiger tidak pernah lari dari satu positioning:</p>
+
+        <div class="focus-chart" aria-label="Garis waktu konsistensi positioning Eiger dari 1989 sampai sekarang">
+          <div class="chart-topline">
+            <span>Satu positioning</span>
+            <span class="year-range">1989 → sekarang</span>
+          </div>
+          <svg viewBox="0 0 936 430" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M74 254H862" fill="none" stroke="rgba(255,255,255,.18)" stroke-width="2"/>
+            <path d="M74 254H862" fill="none" stroke="#f3b51b" stroke-width="8" stroke-linecap="round"/>
+            <path d="M468 254C565 243 608 125 766 112" fill="none" stroke="rgba(255,255,255,.30)" stroke-width="3" stroke-dasharray="8 10"/>
+            <path d="M468 254C568 266 620 339 766 348" fill="none" stroke="rgba(255,255,255,.30)" stroke-width="3" stroke-dasharray="8 10"/>
+            <circle cx="74" cy="254" r="13" fill="#176dc7" stroke="#f3b51b" stroke-width="7"/>
+            <circle cx="468" cy="254" r="10" fill="#f3b51b" stroke="rgba(255,255,255,.75)" stroke-width="4"/>
+            <circle cx="862" cy="254" r="13" fill="#176dc7" stroke="#f3b51b" stroke-width="7"/>
+          </svg>
+          <span class="axis-label">Outdoor &amp; Adventure</span>
+          <span class="branch-label fashion">Fashion</span>
+          <span class="branch-label lifestyle">Lifestyle umum</span>
+          <span class="year start">1989</span>
+          <span class="year end">Sekarang</span>
+          <span class="trust-result"><strong>Fokus</strong> yang bikin dipercaya</span>
+        </div>
+
+        <p class="closing">Tidak coba jadi brand fashion. Tidak coba jadi brand lifestyle umum. <strong>Fokus — dan itu yang bikin mereka dipercaya.</strong></p>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="progress" aria-label="Slide 2 dari 4">
+        <i></i><i class="active"></i><i></i><i></i>
+      </div>
+      <span>02 / 04</span>
+    </footer>
+  </main>
+</body>
+</html>
