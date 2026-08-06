@@ -38,6 +38,9 @@
   --muted: #687083;
   --line: rgba(31, 40, 59, 0.16);
   --page-x: 72px;
+  --visual-x: 32px;
+  --composition-footer-space: 96px;
+  --composition-gap: 34px;
   --radius-lg: 34px;
   --radius-md: 24px;
 }
@@ -103,13 +106,37 @@ body {
   background: radial-gradient(circle, rgba(243, 181, 27, 0.16), transparent 68%);
 }
 
-.topbar {
+.composition {
   position: absolute;
-  top: 55px;
-  left: var(--page-x);
-  right: var(--page-x);
+  inset: 0 0 var(--composition-footer-space);
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+}
+
+.composition .content {
+  position: relative;
+  inset: auto;
+  width: calc(100% - (var(--page-x) * 2));
+  margin: 0 auto;
+}
+
+.composition--left { align-items: stretch; }
+.composition--left .topbar { justify-content: flex-start; }
+.composition--left .gs-logo { object-position: left center; }
+.composition--left .content { text-align: left; }
+
+.composition--center { align-items: stretch; }
+.composition--center .topbar { justify-content: center; }
+.composition--center .gs-logo { object-position: center; }
+.composition--center .content { text-align: center; }
+
+.topbar {
+  position: relative;
+  width: calc(100% - (var(--page-x) * 2));
+  margin: 0 auto var(--composition-gap);
+  display: flex;
   align-items: center;
   z-index: 5;
 }
@@ -118,7 +145,7 @@ body {
   width: 660px;
   height: 112px;
   object-fit: contain;
-  object-position: left center;
+  object-position: inherit;
   opacity: 1;
 }
 

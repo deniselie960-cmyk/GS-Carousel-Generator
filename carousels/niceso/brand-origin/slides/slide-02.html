@@ -6,7 +6,6 @@
   <title>NICE SO Story — Slide 02</title>
   <link rel="stylesheet" href="../../../../shared/styles/system.css">
   <style>
-    .content { position: absolute; left: 72px; right: 72px; top: 220px; }
     .headline { margin-top: 0; max-width: 900px; font-size: 69px; }
     .split { margin-top: 52px; display: grid; grid-template-columns: 1.02fr .98fr; gap: 42px; align-items: center; }
     .body-copy { margin-top: 0; font-size: 27px; }
@@ -28,8 +27,9 @@
 <body>
   <main class="canvas">
     <div class="glow red"></div><div class="glow amber"></div>
-    <header class="topbar"><img class="gs-logo" src="../../../../shared/assets/gs-logo-colour.png" alt="Global Sources Indonesia"></header>
-    <section class="content">
+    <div class="composition composition--left">
+      <header class="topbar"><img class="gs-logo" src="../../../../shared/assets/gs-logo-colour.png" alt="Global Sources Indonesia"></header>
+      <section class="content">
       <h1 class="headline"><span class="highlight">Ternyata ini</span><span class="line">racikan asli</span><span class="line">anak bangsa</span></h1>
       <div class="split">
         <div>
@@ -47,7 +47,8 @@
           </div>
         </div>
       </div>
-    </section>
+      </section>
+    </div>
     <footer class="footer"><div class="progress"><i></i><i class="active"></i><i></i><i></i></div><span>02 / 04</span></footer>
   </main>
 </body>

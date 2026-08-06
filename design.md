@@ -6,9 +6,11 @@ Use this document as the source of truth when creating the next carousel in this
 
 - Design each slide at `1080 × 1350px` (4:5 portrait).
 - Export at 2× density: `2160 × 2700px`.
-- Keep the main horizontal safe area at `72px` from the left and right edges.
-- Place the Global Sources logo strip at `top: 55px`, aligned to the left safe edge.
-- Start primary content around `top: 220px`. Slide 1 may start at `225px` to accommodate its brand mark.
+- Keep `72px` as the preferred text-safe margin from the left and right edges.
+- Treat the logo, headline, supporting copy, and main visual as one composition stack.
+- Optically center the composition stack vertically within the usable canvas, excluding the footer.
+- Do not use a universal fixed `top` value for the logo or primary content.
+- Large visual elements may use more horizontal width than the text-safe area when they remain balanced and unclipped.
 - Keep the footer at `bottom: 48px`, aligned to both safe edges.
 - Nothing important may touch or cross the safe-area boundary.
 
@@ -18,6 +20,9 @@ The canvas dimensions and shared page margin are controlled by:
 --canvas-w: 1080px;
 --canvas-h: 1350px;
 --page-x: 72px;
+--visual-x: 32px;
+--composition-footer-space: 96px;
+--composition-gap: 34px;
 ```
 
 ## 2. Visual character
@@ -48,10 +53,36 @@ Do not introduce a new dominant color unless it is essential to the featured bra
 ## 4. Branding and hierarchy
 
 - Show the full-color Global Sources logo strip on every slide.
-- Keep its position, size, and opacity consistent across the carousel.
+- Keep its size, appearance, and opacity consistent across the carousel.
+- Align the logo to the slide's primary content axis: left with left-aligned content and centered with centered content.
+- Keep the logo inside the same composition stack as the headline, body, and main visual.
 - Show the featured brand logo on slide 1 only, unless another slide specifically discusses brand identity.
 - The order of attention should be: headline → key visual/data → supporting copy → navigation.
 - Do not use category eyebrow labels such as “Asal-usul,” “Pertumbuhan,” or “Kesimpulan.” These were removed from the final design.
+
+### Composition modes
+
+Every standard slide must use one explicit composition mode:
+
+- `.composition--left`: logo, headline, and body share the left content axis. The main visual may expand toward the right.
+- `.composition--center`: logo, headline, body, and primary visual share the canvas center axis.
+
+Canonical structure:
+
+```html
+<div class="composition composition--left">
+  <header class="topbar">...</header>
+  <section class="content">...</section>
+</div>
+```
+
+Use `composition--center` for a centered slide. Do not center the logo independently from left-aligned content, or left-align it above a centered composition.
+
+The standard `.composition` fills the canvas above the footer and uses flex centering to balance the entire stack vertically. Judge top and bottom space optically because a dense chart or large image carries more visual weight than text.
+
+The `72px` margin is mandatory for important text. Decorative backgrounds, charts, orbit lines, images, and cards may approach the `32px` visual margin or bleed to an edge when the design requires it. Nothing essential may be clipped.
+
+Full-bleed media slides may use local positioning overrides, but the logo must still follow the editorial content alignment and the full composition must remain visually balanced.
 
 ## 5. Headline system
 
@@ -71,7 +102,7 @@ Headlines are uppercase, Gotham Black (`900`), tightly tracked, and visually dom
 - Write intentional line breaks in the HTML; do not rely on automatic wrapping.
 - Prefer `2–3 words` per line for readable, poster-like rhythm.
 - Use no more than three headline lines.
-- A four-word line is allowed when the final wording must stay together, as on slide 1: “DIKIRA BRAND IMPOR KOREA,”.
+- Avoid four-word lines unless the wording cannot be separated; any exception must be verified in the rendered slide.
 - If a required line is too long, reduce only that line’s font size. Do not compress the whole slide or allow the box to overflow.
 - Keep `0.12em` vertical space between headline lines.
 
@@ -104,7 +135,7 @@ For an unusually long emphasized line, use a local override:
 
 Use these as visual references for length and rhythm:
 
-1. `DIKIRA BRAND IMPOR KOREA,` / `TERNYATA MILIK LOKAL!`
+1. `DIKIRA BRAND` / `IMPOR KOREA,` / `TERNYATA MILIK LOKAL!`
 2. `TERNYATA INI` / `RACIKAN ASLI` / `ANAK BANGSA`
 3. `DIAM-DIAM NYALIP` / `TANPA NAMA BESAR` / `DARI LUAR`
 4. `BUKAN SEKEDAR MIRIP.` / `INI BUKTI.`
@@ -162,12 +193,13 @@ Put a rule in `shared/styles/system.css` only if it should apply to multiple sli
 ## 11. Building a new slide
 
 1. Duplicate the closest existing slide structure.
-2. Change the title, content, slide number, and progress state.
-3. Rewrite the headline using intentional `<span>` lines.
-4. Keep only the first line inside `.highlight`.
-5. Replace the central visual while preserving the safe area and overall hierarchy.
-6. Open the HTML directly in a browser for a quick check.
-7. Render the complete carousel and inspect the PNG files at full size.
+2. Choose `.composition--left` or `.composition--center` before positioning individual elements.
+3. Change the title, content, slide number, and progress state.
+4. Rewrite the headline using intentional `<span>` lines.
+5. Keep only the first line inside `.highlight`.
+6. Replace the central visual while preserving text safety and optical balance.
+7. Open the HTML directly in a browser for a quick check.
+8. Render the complete carousel and inspect the PNG files at full size.
 
 ## 12. Rendering
 
@@ -197,7 +229,11 @@ Before approving a carousel, verify every item:
 
 - [ ] Canvas is 1080 × 1350 and output is sharp.
 - [ ] Global Sources logo strip is identical on every slide.
-- [ ] All important content stays inside the 72px horizontal safe area.
+- [ ] The logo follows the same left or center axis as the primary content.
+- [ ] The logo, headline, body, and visual read as one composition stack.
+- [ ] The complete stack is optically centered between the top of the canvas and the footer zone.
+- [ ] Important text stays inside the 72px text-safe area.
+- [ ] Wider visual elements remain balanced, intentional, and unclipped.
 - [ ] Headline line breaks are intentional.
 - [ ] Headline lines preferably contain 2–3 words.
 - [ ] Only the first headline line has a blue box.
