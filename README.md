@@ -5,14 +5,12 @@ An HTML/CSS carousel design library organized by brand and campaign. Each campai
 ## Repository structure
 
 ```text
-Carousel-Generator-2/
+GS-Carousel-Generator-main/
 |-- carousels/
+|   |-- eiger/
+|   |   `-- brand-longevity/  # assets, content, slides, rendered
 |   `-- niceso/
-|       `-- brand-origin/
-|           |-- assets/       # Campaign-specific images and logos
-|           |-- content/      # Story copy and content data
-|           |-- slides/       # Editable HTML slides
-|           `-- rendered/     # Generated PNG/JPG files
+|       `-- brand-origin/     # assets, content, slides, rendered
 |-- shared/
 |   |-- assets/               # Global Sources logos and shared textures
 |   `-- styles/               # Reusable design system
@@ -23,15 +21,19 @@ Carousel-Generator-2/
 `-- README.md
 ```
 
-## Included campaign
+## Included benchmark campaigns
 
-The current campaign is:
+Use these completed campaigns as references when building new carousels:
 
 ```text
 carousels/niceso/brand-origin
+carousels/eiger/brand-longevity
 ```
 
-It contains four 1080 x 1350 Instagram carousel slides and their verified PNG exports.
+Both contain four 1080 x 1350 Instagram carousel slides and verified 2160 x 2700 PNG exports.
+
+- **NICE SO** establishes the white-paper layouts, headline rhythm, charts, cards, and alignment modes.
+- **Eiger** extends the system with alternating white/blue paper backgrounds, editorial photography, photo collages, yellow-on-blue headline emphasis, timelines, and centered conclusion diagrams.
 
 ## First-time setup
 
@@ -47,19 +49,29 @@ The renderer uses Google Chrome or Microsoft Edge when available. Playwright Chr
 npx playwright install chromium
 ```
 
-## Render the NICE SO campaign
+## Render a campaign
+
+Pass the campaign path after `--`:
 
 ```powershell
-npm run render:png
+npm run render:png -- carousels/eiger/brand-longevity
+```
+
+Render NICE SO:
+
+```powershell
+npm run render:png -- carousels/niceso/brand-origin
 ```
 
 For JPG output:
 
 ```powershell
-npm run render:jpg
+npm run render:jpg -- carousels/eiger/brand-longevity
 ```
 
-## Render another campaign
+Running `npm run render:png` without a campaign path defaults to NICE SO.
+
+## Direct renderer usage
 
 Pass its path inside `carousels/`:
 

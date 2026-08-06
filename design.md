@@ -1,6 +1,6 @@
 # Global Sources Carousel Design Ground Rules
 
-Use this document as the source of truth when creating the next carousel in this system. New slides should feel like part of the same family as the final NICE SO carousel, even when the story, brand, statistics, and diagrams change.
+Use this document as the source of truth when creating the next carousel in this system. The final NICE SO and Eiger carousels are the benchmark campaigns. New slides should feel like part of the same family even when the story, brand, statistics, photographs, and diagrams change.
 
 ## 1. Format and safe area
 
@@ -29,7 +29,7 @@ The canvas dimensions and shared page margin are controlled by:
 
 The design should feel editorial, bold, modern, and credible—not like a generic corporate presentation.
 
-- Use the white paper texture as the base background.
+- Use the paper texture on every slide. Alternate between white paper and dark-blue paper when the story benefits from a stronger rhythm.
 - Preserve the subtle blue dot field and soft blue/yellow edge glows.
 - Use clean geometric forms, strong type, restrained shadows, and generous negative space.
 - Use blue as the dominant emphasis color and amber only as a supporting accent.
@@ -52,7 +52,7 @@ Do not introduce a new dominant color unless it is essential to the featured bra
 
 ## 4. Branding and hierarchy
 
-- Show the full-color Global Sources logo strip on every slide.
+- Show the full-color Global Sources logo strip on white slides and the white logo strip on blue slides.
 - Keep its size, appearance, and opacity consistent across the carousel.
 - Align the logo to the slide's primary content axis: left with left-aligned content and centered with centered content.
 - Keep the logo inside the same composition stack as the headline, body, and main visual.
@@ -106,13 +106,14 @@ Headlines are uppercase, Gotham Black (`900`), tightly tracked, and visually dom
 - If a required line is too long, reduce only that line’s font size. Do not compress the whole slide or allow the box to overflow.
 - Keep `0.12em` vertical space between headline lines.
 
-### Blue emphasis box
+### Headline emphasis box
 
-- Apply the blue box to the first headline line only.
-- Use white type inside the box.
+- Apply the emphasis box to the first headline line only.
+- On white paper, use the blue box with white type.
+- On blue paper, use the amber box with dark type.
 - The box must hug the text, remain on one line, and stay inside the safe area.
 - Do not extend the box to full canvas width.
-- Do not use multiple blue headline boxes on one slide.
+- Do not use multiple headline boxes on one slide.
 
 Canonical markup:
 
@@ -140,6 +141,24 @@ Use these as visual references for length and rhythm:
 3. `DIAM-DIAM NYALIP` / `TANPA NAMA BESAR` / `DARI LUAR`
 4. `BUKAN SEKEDAR MIRIP.` / `INI BUKTI.`
 
+### Final Eiger benchmark patterns
+
+Use the Eiger carousel as the reference for these additional treatments:
+
+1. **Editorial cover photography:** a wide photograph may replace a diagram when the featured storefront already supplies the brand identity.
+2. **Alternating backgrounds:** use white paper on slides 1 and 3, then blue paper on slides 2 and 4, unless another sequence better supports the story.
+3. **Blue-paper headline:** use an amber first-line box with dark type; keep remaining headline lines white.
+4. **Photo collage:** combine two complementary images at restrained sizes instead of stretching a low-resolution image across the canvas.
+5. **Meaningful chart selection:** a chart must visualize the claim accurately. Use an uninterrupted timeline for consistency, not a rising graph that would imply unsupported growth.
+6. **Conclusion diagram:** center the logo, headline, explanatory visual, and takeaway when the final slide is a synthesis rather than a left-to-right narrative.
+
+The Eiger headline references are:
+
+1. `KENAPA EIGER` / `TETAP RELEVAN` / `SELAMA PULUHAN TAHUN?`
+2. `KONSISTENSI YANG` / `BIKIN MEREKA KUAT`
+3. `YANG DIJUAL` / `BUKAN SEKADAR PRODUK`
+4. `PELAJARAN DARI EIGER`
+
 ## 6. Body copy
 
 - Use sentence case and regular-weight Gotham for supporting text.
@@ -153,6 +172,8 @@ Use these as visual references for length and rhythm:
 
 - Give each slide one dominant visual device: network, dial, chart, orbit, comparison, or another simple explanatory form.
 - Use inline SVG for icons and charts when possible so exports remain sharp.
+- Use editorial photo cards with fine white borders and restrained shadows when photography is the dominant visual.
+- When source images are small, use a two-image collage at native-friendly sizes instead of a full-canvas enlargement.
 - Use rounded cards with translucent white fills, fine borders, and soft shadows.
 - Keep large metrics bold and unmistakable; supporting labels should be smaller and muted.
 - Use amber for nodes, chart points, or secondary labels—not large background areas.
@@ -212,13 +233,13 @@ npm install
 Render PNG files:
 
 ```powershell
-npm run render:png
+npm run render:png -- carousels/eiger/brand-longevity
 ```
 
 Render JPG files:
 
 ```powershell
-npm run render:jpg
+npm run render:jpg -- carousels/eiger/brand-longevity
 ```
 
 Exports are written to the selected campaign's `rendered/` directory.
@@ -229,6 +250,7 @@ Before approving a carousel, verify every item:
 
 - [ ] Canvas is 1080 × 1350 and output is sharp.
 - [ ] Global Sources logo strip is identical on every slide.
+- [ ] The full-color logo is used on white paper and the white logo is used on blue paper.
 - [ ] The logo follows the same left or center axis as the primary content.
 - [ ] The logo, headline, body, and visual read as one composition stack.
 - [ ] The complete stack is optically centered between the top of the canvas and the footer zone.
@@ -236,8 +258,9 @@ Before approving a carousel, verify every item:
 - [ ] Wider visual elements remain balanced, intentional, and unclipped.
 - [ ] Headline line breaks are intentional.
 - [ ] Headline lines preferably contain 2–3 words.
-- [ ] Only the first headline line has a blue box.
-- [ ] The blue box is one line and does not clip or overflow.
+- [ ] Only the first headline line has an emphasis box.
+- [ ] The emphasis box uses blue/white on white paper or amber/dark on blue paper.
+- [ ] The emphasis box is one line and does not clip or overflow.
 - [ ] Supporting copy is readable and not overcrowded.
 - [ ] Numbers and proof points are visually emphasized.
 - [ ] The main visual has a clear purpose.
