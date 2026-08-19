@@ -1,0 +1,13 @@
+{
+  "campaign": "FAQ Seputar Global Sources Indonesia",
+  "slides": [
+    {"number":"01","headline":"FAQ","subtitle":"Seputar Global Sources Indonesia","prompt":"Geser untuk lengkapnya"},
+    {"number":"02","question":"Apa produk yang akan dipamerkan di edisi kali ini?","answer":{"Electronics":["Elektronik Konsumen","Elektronik & Aksesoris Ponsel","Produk Game","Solusi Rumah Pintar & Keamanan","Komponen & Suku Cadang Elektronik","Teknologi Kendaraan"],"Home Appliances":["Peralatan Rumah Tangga Kecil","Peralatan Dapur","Peralatan Rumah Tangga","Produk Pencahayaan"],"Gifts & Home":["Olahraga & Kebugaran","Rumah & Dapur","Hadiah & Premium","Aksesori Fesyen"]}},
+    {"number":"03","question":"Apakah boleh membawa anak-anak?","answer":"Mohon maaf, anak-anak tidak diperkenankan hadir. Usia minimal pengunjung Global Sources Indonesia adalah 18 tahun demi keamanan dan kenyamanan selama pameran."},
+    {"number":"04","question":"Apakah masuknya berbayar?","answer":"Kakak bisa mendaftarkan diri melalui Linktr.ee/GSI-Register2026 untuk mendapatkan tiket masuk Global Sources Indonesia tanpa biaya."},
+    {"number":"05","question":"E-ticket ini bisa dipakai hari apa saja?","answer":"E-ticket dapat digunakan selama 3 hari pameran, 17–19 September 2026. Cukup daftar satu kali dan gunakan tiket yang sama selama tiga hari."},
+    {"number":"06","question":"Bisa saya minta daftar produk dan exhibitornya?","answer":"Daftar produk dan exhibitor dapat dicek melalui website globalsources.com/Indonesia."},
+    {"number":"07","question":"Apakah ada seminar atau forum bisnis selama pameran berlangsung?","answer":"Ya, tersedia berbagai seminar, talkshow, dan forum bisnis yang membahas tren industri serta peluang bisnis."},
+    {"number":"08","question":"Apakah bisa melakukan pembelian secara retail atau satuan?","answer":"Mohon maaf, pembelian retail tidak diperkenankan. Sesuai aturan Global Sources Indonesia, barang-barang sampel tidak boleh diperjualbelikan."}
+  ]
+}
