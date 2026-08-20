@@ -52,7 +52,9 @@ Do not introduce a new dominant color unless it is essential to the featured bra
 
 ## 4. Branding and hierarchy
 
-- Show the full-color Global Sources logo strip on white slides and the white logo strip on blue slides.
+- Use `shared/assets/gs-logo-colour.svg` on white paper and `shared/assets/gs-logo-white.svg` on blue paper. These are the canonical approved lockups.
+- Preserve the supplied show order: Electronics → Home Appliances → Gifts & Home. Never rearrange, recolor, redraw, or separate the three show marks.
+- The approved SVGs use 1:1 artboards with the horizontal lockup centered inside them. Always display them through the shared `.gs-logo` class, which crops the unused vertical artboard space with `object-fit: cover`. Do not convert them to PNG or override `object-fit` locally.
 - Keep its size, appearance, and opacity consistent across the carousel.
 - Align the logo to the slide's primary content axis: left with left-aligned content and centered with centered content.
 - Keep the logo inside the same composition stack as the headline, body, and main visual.
@@ -71,7 +73,9 @@ Canonical structure:
 
 ```html
 <div class="composition composition--left">
-  <header class="topbar">...</header>
+  <header class="topbar">
+    <img class="gs-logo" src="../../../../shared/assets/gs-logo-colour.svg" alt="Global Sources Indonesia">
+  </header>
   <section class="content">...</section>
 </div>
 ```
@@ -202,7 +206,7 @@ Each slide must make sense by itself while advancing the same story. Do not make
 ## 10. File responsibilities
 
 - `shared/styles/system.css`: shared tokens, canvas, typography, headline treatment, footer, icons, and reusable components.
-- `shared/assets/`: Global Sources logos, shared textures, and system-wide assets.
+- `shared/assets/`: approved Global Sources SVG lockups (`gs-logo-colour.svg` and `gs-logo-white.svg`), shared textures, and system-wide assets.
 - `carousels/<brand>/<campaign>/slides/slide-XX.html`: slide-specific content, layout, diagram, and local sizing exceptions.
 - `carousels/<brand>/<campaign>/assets/`: campaign-specific logos and images.
 - `carousels/<brand>/<campaign>/content/`: reusable copy source and story outline.
@@ -249,8 +253,9 @@ Exports are written to the selected campaign's `rendered/` directory.
 Before approving a carousel, verify every item:
 
 - [ ] Canvas is 1080 × 1350 and output is sharp.
-- [ ] Global Sources logo strip is identical on every slide.
+- [ ] Every slide uses the approved shared SVG lockup; no legacy PNG or campaign-local copy is used.
 - [ ] The full-color logo is used on white paper and the white logo is used on blue paper.
+- [ ] The logo reads Electronics → Home Appliances → Gifts & Home, with no cropped show mark or altered artwork.
 - [ ] The logo follows the same left or center axis as the primary content.
 - [ ] The logo, headline, body, and visual read as one composition stack.
 - [ ] The complete stack is optically centered between the top of the canvas and the footer zone.

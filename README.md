@@ -12,7 +12,7 @@ GS-Carousel-Generator-main/
 |   `-- niceso/
 |       `-- brand-origin/     # assets, content, slides, rendered
 |-- shared/
-|   |-- assets/               # Global Sources logos and shared textures
+|   |-- assets/               # Approved color/white SVG logo lockups and shared textures
 |   `-- styles/               # Reusable design system
 |-- scripts/
 |   `-- render.mjs            # Campaign-aware Playwright renderer

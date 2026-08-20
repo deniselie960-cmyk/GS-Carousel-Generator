@@ -169,7 +169,8 @@ body {
 .gs-logo {
   width: 660px;
   height: 112px;
-  object-fit: contain;
+  /* The approved lockups use a square artboard; crop its empty vertical space. */
+  object-fit: cover;
   object-position: inherit;
   opacity: 1;
 }
