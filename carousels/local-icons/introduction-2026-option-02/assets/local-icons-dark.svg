@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 781.57 379.62">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Gotham-Bold, Gotham;
+        font-size: 139.98px;
+        font-weight: 700;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: #22211d;
+      }
+
+      .cls-2 {
+        font-family: Gotham-Book, Gotham;
+        font-size: 132.66px;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+
+      .cls-5 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-6 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-7 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-8 {
+        letter-spacing: 0em;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="171.35" y1="132.73" x2="196.12" y2="100.5" gradientTransform="translate(364.45 237.17) rotate(-180)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#a8884b"/>
+      <stop offset=".18" stop-color="#ac8c4d"/>
+      <stop offset=".36" stop-color="#b89853"/>
+      <stop offset=".54" stop-color="#ccac5e"/>
+      <stop offset=".57" stop-color="#d1b161"/>
+      <stop offset="1" stop-color="#cdb87f"/>
+    </linearGradient>
+  </defs>
+  <polygon class="cls-3" points="99.34 226.65 99.34 57.37 75.21 57.37 75.21 226.65 75.21 250.77 99.34 250.77 149.13 250.77 149.13 226.65 99.34 226.65"/>
+  <polygon class="cls-3" points="50.7 272.6 50.7 59.67 26.57 59.67 26.57 296.73 30.28 296.73 50.7 296.73 149.13 296.73 149.13 272.6 50.7 272.6"/>
+  <polygon class="cls-3" points="122.19 59.67 122.19 83.8 219.98 83.8 219.98 272.6 194.32 272.6 194.32 151.58 170.19 151.58 170.19 272.6 170.19 296.73 194.32 296.73 219.98 296.73 244.11 296.73 244.11 272.6 244.11 83.8 244.11 65.16 244.11 59.67 122.19 59.67"/>
+  <rect class="cls-6" x="170.16" y="105.94" width="24.13" height="25.28" transform="translate(364.45 237.17) rotate(-180)"/>
+  <text class="cls-2" transform="translate(282.6 154.07)"><tspan class="cls-7" x="0" y="0">L</tspan><tspan class="cls-4" x="75.35" y="0">O</tspan><tspan class="cls-8" x="188.11" y="0">C</tspan><tspan x="286.01" y="0">AL</tspan></text>
+  <text class="cls-1" transform="translate(282.6 296.73)"><tspan x="0" y="0">I</tspan><tspan class="cls-5" x="47.03" y="0">C</tspan><tspan x="147.54" y="0">ONS</tspan></text>
+</svg>

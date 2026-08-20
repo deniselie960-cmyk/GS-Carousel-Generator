@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1080, initial-scale=1">
+  <title>Dirgahayu Republik Indonesia — Option 02</title>
+  <link rel="stylesheet" href="../../../../shared/styles/system.css">
+  <style>
+    :root { --indonesia-red: #e5232a; --indonesia-red-dark: #b80f1b; }
+
+    .option-two {
+      background:
+        linear-gradient(rgba(255,255,255,.50), rgba(255,255,255,.66)),
+        url("../../../../shared/assets/paper-texture.jpg") center / cover no-repeat,
+        #f7f7f4;
+    }
+
+    .option-two::before {
+      opacity: .10;
+      mask-image: linear-gradient(to bottom, transparent 5%, black 28%, black 92%);
+    }
+
+    .red-field {
+      position: absolute;
+      left: -175px;
+      top: -155px;
+      width: 760px;
+      height: 760px;
+      z-index: -2;
+      border-radius: 50%;
+      background: radial-gradient(circle at 62% 62%, #ef3037, var(--indonesia-red-dark) 76%);
+      box-shadow: 0 40px 90px rgba(184,15,27,.18);
+    }
+
+    .red-field::after {
+      content: "";
+      position: absolute;
+      inset: 55px;
+      border: 2px dashed rgba(255,255,255,.27);
+      border-radius: 50%;
+    }
+
+    .blue-line {
+      position: absolute;
+      right: -90px;
+      top: 510px;
+      width: 720px;
+      height: 360px;
+      z-index: -1;
+      border: 2px dashed rgba(49,143,240,.28);
+      border-radius: 50%;
+      transform: rotate(-13deg);
+    }
+
+    .blue-line::before,
+    .blue-line::after {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--primary);
+      box-shadow: 0 0 0 7px rgba(49,143,240,.11);
+    }
+    .blue-line::before { left: 70px; top: 42px; }
+    .blue-line::after { right: 80px; bottom: 35px; }
+
+    .topbar {
+      position: absolute;
+      top: 62px;
+      left: 72px;
+      width: 590px;
+      height: 90px;
+      margin: 0;
+      justify-content: flex-start;
+    }
+    .gs-logo { width: 590px; height: 90px; object-position: left center; }
+
+    .copy-block {
+      position: absolute;
+      left: 54px;
+      top: 184px;
+      z-index: 3;
+      width: 610px;
+      padding: 28px 18px 34px;
+      text-align: left;
+      background: rgba(255, 255, 255, .94);
+      border: 1px solid rgba(32, 35, 43, .08);
+      box-shadow: 0 22px 48px rgba(31, 40, 59, .12);
+    }
+
+    .date {
+      display: inline-flex;
+      align-items: center;
+      gap: 15px;
+      color: var(--primary-dark);
+      font-size: 25px;
+      line-height: 1;
+      font-weight: 900;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+    .date::before {
+      content: "";
+      width: 58px;
+      height: 4px;
+      background: var(--primary);
+    }
+
+    .headline {
+      margin: 28px 0 0;
+      max-width: 574px;
+      font-size: 82px;
+      line-height: .90;
+      letter-spacing: -.06em;
+    }
+
+    .headline .white-on-red {
+      display: inline-block;
+      padding: .09em .17em .12em;
+      color: var(--white);
+      background: var(--indonesia-red);
+      box-shadow: 0 16px 34px rgba(184,15,27,.18);
+    }
+    .headline .line { margin-top: .12em; }
+
+    .hero-stage {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 540px;
+      bottom: 0;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .hero-stage img {
+      position: absolute;
+      right: -110px;
+      top: -120px;
+      width: 1040px;
+      height: auto;
+      display: block;
+      filter: drop-shadow(0 26px 32px rgba(31,40,59,.11));
+    }
+
+  </style>
+</head>
+<body>
+  <main class="canvas option-two">
+    <div class="red-field"></div>
+    <div class="blue-line"></div>
+
+    <header class="topbar">
+      <img class="gs-logo" src="../../../../shared/assets/gs-logo-white.png" alt="Global Sources Indonesia">
+    </header>
+
+    <section class="copy-block">
+      <div class="date">17 Agustus 2026</div>
+      <h1 class="headline">
+        <span class="white-on-red">Dirgahayu</span>
+        <span class="line">Republik</span>
+        <span class="line">Indonesia</span>
+      </h1>
+    </section>
+
+    <div class="hero-stage" aria-label="Bendera Merah Putih berkibar dengan burung origami">
+      <img src="../assets/indonesia-flag-hero.png" alt="Ilustrasi bendera Indonesia berkibar">
+    </div>
+
+  </main>
+</body>
+</html>
