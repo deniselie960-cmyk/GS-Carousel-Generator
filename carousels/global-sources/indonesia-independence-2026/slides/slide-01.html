@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1080, initial-scale=1">
+  <title>Dirgahayu Republik Indonesia — 17 Agustus 2026</title>
+  <link rel="stylesheet" href="../../../../shared/styles/system.css">
+  <style>
+    :root {
+      --indonesia-red: #e5232a;
+      --indonesia-red-dark: #b80f1b;
+    }
+
+    .independence-canvas {
+      background:
+        linear-gradient(rgba(255,255,255,.54), rgba(255,255,255,.70)),
+        url("../../../../shared/assets/paper-texture.jpg") center / cover no-repeat,
+        #f7f7f4;
+    }
+
+    .independence-canvas::before {
+      opacity: .12;
+      mask-image: radial-gradient(circle at 50% 52%, black, transparent 70%);
+    }
+
+    .sunburst {
+      position: absolute;
+      left: 50%;
+      top: 55%;
+      width: 1120px;
+      height: 1120px;
+      transform: translate(-50%, -50%);
+      z-index: -2;
+      border-radius: 50%;
+      opacity: .42;
+      background: repeating-conic-gradient(
+        from -4deg,
+        rgba(229,35,42,.08) 0deg 7deg,
+        transparent 7deg 17deg
+      );
+      mask-image: radial-gradient(circle, rgba(0,0,0,.92), transparent 69%);
+    }
+
+    .blue-orbit {
+      position: absolute;
+      left: 50%;
+      top: 748px;
+      width: 930px;
+      height: 480px;
+      transform: translateX(-50%) rotate(-5deg);
+      z-index: -1;
+      border: 2px dashed rgba(49,143,240,.25);
+      border-radius: 50%;
+    }
+
+    .blue-orbit::before,
+    .blue-orbit::after {
+      content: "";
+      position: absolute;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: var(--primary);
+      box-shadow: 0 0 0 7px rgba(49,143,240,.10);
+    }
+    .blue-orbit::before { left: 102px; top: 67px; }
+    .blue-orbit::after { right: 100px; bottom: 62px; }
+
+    .topbar {
+      position: absolute;
+      top: 64px;
+      left: 72px;
+      right: 72px;
+      width: auto;
+      height: 84px;
+      margin: 0;
+      justify-content: center;
+    }
+
+    .gs-logo { width: 610px; height: 96px; object-position: center; }
+
+    .hero-copy {
+      position: absolute;
+      top: 188px;
+      left: 72px;
+      right: 72px;
+      z-index: 3;
+      text-align: center;
+    }
+
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 20px;
+      color: var(--primary-dark);
+      font-size: 26px;
+      font-weight: 900;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+    .kicker::before,
+    .kicker::after {
+      content: "";
+      width: 70px;
+      height: 3px;
+      background: var(--primary);
+    }
+
+    .headline {
+      margin: 25px auto 0;
+      max-width: 920px;
+      color: var(--ink);
+      font-size: 76px;
+      line-height: .93;
+      letter-spacing: -.055em;
+    }
+
+    .headline .red-line { display: block; color: var(--indonesia-red); }
+    .headline .line { margin-top: .10em; }
+
+    .flag-stage {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 500px;
+      bottom: 0;
+      z-index: 1;
+      overflow: hidden;
+    }
+
+    .flag-stage img {
+      position: absolute;
+      left: 50%;
+      top: -74px;
+      width: 1080px;
+      height: auto;
+      transform: translateX(-50%);
+      display: block;
+      filter: drop-shadow(0 22px 26px rgba(31,40,59,.10));
+    }
+
+  </style>
+</head>
+<body>
+  <main class="canvas independence-canvas">
+    <div class="sunburst"></div>
+    <div class="blue-orbit"></div>
+
+    <header class="topbar">
+      <img class="gs-logo" src="../../../../shared/assets/gs-logo-colour.png" alt="Global Sources Indonesia">
+    </header>
+
+    <section class="hero-copy">
+      <div class="kicker">17 Agustus 2026</div>
+      <h1 class="headline">
+        <span class="red-line">Dirgahayu</span>
+        <span class="line">Republik Indonesia</span>
+      </h1>
+    </section>
+
+    <div class="flag-stage" aria-label="Bendera Merah Putih berkibar dengan burung origami merah dan putih">
+      <img src="../assets/indonesia-flags-ribbon.png" alt="Ilustrasi bendera Indonesia dan pita merah putih">
+    </div>
+
+  </main>
+</body>
+</html>

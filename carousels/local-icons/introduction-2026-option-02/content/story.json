@@ -1,0 +1,58 @@
+{
+  "campaign": "Local Icons — Introduction — Option 02",
+  "slides": [
+    {
+      "number": "01",
+      "title": "LOCAL ICONS",
+      "tagline": "Where Local Becomes Iconic",
+      "cta": "👉 Swipe buat kenalan lebih dekat sama kita"
+    },
+    {
+      "number": "02",
+      "title": "THIS IS FOR YOU IF...",
+      "intro": "Kamu tuh tipe yang...",
+      "items": [
+        "Udah spot trend duluan sebelum viral",
+        "Follow satu creator terus diem-diem pengen merch-nya",
+        "Belanja based on taste, bukan cuma ikut-ikutan hype",
+        "Gen Z / Millennial (17–35), online 24/7",
+        "Atau lagi scouting brand baru buat di-restock"
+      ]
+    },
+    {
+      "number": "03",
+      "title": "WHAT IS LOCAL ICONS?",
+      "intro": "Local Icons itu tempatnya brand lokal yang bikin Indonesia makin iconic — yang dipakai, dipake, dicintai, dan dibeli.",
+      "features": [
+        {"icon":"🛍️","title":"Creator Brand Marketplace","body":"Fashion, aksesoris & lifestyle brand punya influencer, KOL & artis favorit kamu"},
+        {"icon":"🎥","title":"Live Commerce Experience","body":"Ketemu langsung sama brand owner-nya, live selling, promo eksklusif on-site"},
+        {"icon":"🎤","title":"Stage Activation","body":"Talkshow, creator journey, mini fashion show"},
+        {"icon":"📸","title":"Content Machine","body":"Spot-spot yang emang dibuat buat next post kamu"}
+      ]
+    },
+    {
+      "number": "04",
+      "title": "MEET THE ICONS",
+      "intro": "Barang-barang yang bakal bikin kamu bilang \"gue butuh ini.\"",
+      "products": [null, null, null, null]
+    },
+    {
+      "number": "05",
+      "title": "WHY LOCAL ICONS?",
+      "intro": "Ini bukan sekadar belanja.",
+      "items": [
+        "Talkshow bareng creator & founder",
+        "Ketemu langsung brand yang selama ini cuma muncul di feed kamu",
+        "Spot yang literally dirancang buat kece di foto",
+        "First access buat drop & promo eksklusif"
+      ]
+    },
+    {
+      "number": "06",
+      "statement": "Where local becomes iconic — dan kamu yang tahu duluan",
+      "cta": "Follow kita sekarang!",
+      "hashtag": "#MeetTheIcons"
+    }
+  ]
+}
+
