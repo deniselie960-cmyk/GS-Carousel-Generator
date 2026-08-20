@@ -22,7 +22,7 @@ body{font-family:"Gotham LI",Gotham,Arial,sans-serif;color:var(--ink);background
 
 .frame{height:100%;padding:62px 72px 72px;display:flex;flex-direction:column;position:relative;z-index:2}
 .brandbar{position:relative;z-index:10;height:112px;display:flex;align-items:flex-start;flex:0 0 auto}
-.brand-logo{display:block;width:220px;height:106px;object-fit:contain;object-position:left top}
+.brand-logo{display:block;width:478px;height:106px;object-fit:contain;object-position:left top}
 .content{flex:1;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:2}
 .center{text-align:center;align-items:center}
 h1,h2,p{margin:0}
@@ -34,13 +34,13 @@ h1,h2,p{margin:0}
 .cover::before{width:260px;height:260px;right:-90px;top:-85px}
 .cover::after{width:410px;height:190px;left:-170px;bottom:-65px}
 .cover .blob--yellow{width:190px;height:190px;right:-65px;bottom:105px}
-.cover .blob--blue{width:120px;height:120px;left:38px;top:450px;opacity:1}
-.cover .frame{justify-content:center;padding-top:54px;padding-bottom:54px}
+.cover .blob--blue{width:104px;height:104px;left:24px;top:438px;opacity:1}
+.cover .frame{justify-content:center;padding:54px 72px}
 .cover .brandbar{height:auto;justify-content:center;flex:0 0 auto}
-.cover .brand-logo{width:760px;height:368px;object-position:center}
-.cover .content{flex:0 0 auto;justify-content:flex-start;margin-top:12px}
+.cover .brand-logo{width:620px;height:438px;object-fit:contain;object-position:center}
+.cover .content{flex:0 0 auto;justify-content:flex-start;margin-top:24px}
 .cover .tagline{font-size:60px;line-height:1.04;font-weight:900;letter-spacing:-.05em}
-.cover .swipe{margin-top:58px;padding:23px 34px;border-radius:999px;background:var(--ink);color:#fff;font-size:24px;line-height:1.15;font-weight:700;box-shadow:0 20px 44px rgba(34,33,29,.18)}
+.cover .swipe{margin-top:52px;padding:23px 34px;border-radius:999px;background:var(--ink);color:#fff;font-size:24px;line-height:1.15;font-weight:700;box-shadow:0 20px 44px rgba(34,33,29,.18)}
 .cover .orb{display:none}
 
 .slide-02 .content{justify-content:flex-start;padding-top:72px}
@@ -91,6 +91,7 @@ h1,h2,p{margin:0}
 .benefit:nth-child(4){background:#e8f3ff}
 
 .closing .content{max-width:900px;margin:0 auto}
+.closing .brandbar{position:absolute;left:72px;top:62px;width:478px;height:106px;z-index:10}
 .closing .statement{font-size:74px;line-height:.96;font-weight:900;letter-spacing:-.058em}
 .closing .cta{margin-top:48px;font-size:36px;line-height:1.15;font-weight:700}
 .closing .hashtag{display:inline-block;margin-top:24px;padding:18px 28px;border-radius:999px;background:linear-gradient(90deg,var(--teal),var(--blue),var(--purple));color:#fff;font-size:30px;line-height:1;font-weight:900;letter-spacing:-.02em}
