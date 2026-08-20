@@ -1,0 +1,30 @@
+{
+  "series": "Panduan Impor",
+  "brand": "Global Sources Indonesia",
+  "campaign": "freight-forwarder-guide",
+  "slides": [
+    {
+      "number": "01",
+      "headline": "Mau impor dari Tiongkok, tapi bingung pilih freight forwarder?",
+      "subheadline": "3 hal ini wajib kamu cek dulu sebelum deal",
+      "prompt": "Swipe ke kiri"
+    },
+    {
+      "number": "02",
+      "headline": "1. Cek pengalaman & legalitasnya",
+      "body": "Forwarder yang udah lama handle rute Tiongkok–Indonesia biasanya lebih paham regulasi bea cukai & pajak impor. Jangan lupa cek izin usaha resminya juga — biar nggak ketemu yang fiktif."
+    },
+    {
+      "number": "03",
+      "headline": "2. Pastikan layanannya sesuai kebutuhan bisnismu",
+      "body": "Air freight buat yang butuh cepat, sea freight buat kirim dalam jumlah besar. Cek juga apakah mereka nyediain customs clearance, tracking real-time, asuransi, sampai konsolidasi barang."
+    },
+    {
+      "number": "04",
+      "headline": "3. Jangan tergiur harga murah",
+      "body": "Minta rincian biaya dari awal — freight cost, storage fee, sampai biaya customs. Forwarder yang transparan & responsif itu tanda mereka profesional.",
+      "closing": "Sourcing yang tepat dimulai dari mitra logistik yang tepat.",
+      "cta": "bit.ly/gsiartikel12"
+    }
+  ]
+}
