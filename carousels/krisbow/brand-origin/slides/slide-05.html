@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1080, initial-scale=1">
+  <title>Krisbow — 05</title>
+  <link rel="stylesheet" href="../../../../shared/styles/system.css">
+  <link rel="stylesheet" href="campaign.css">
+  <style>
+    .composition { --composition-gap: 20px; }
+    .headline { max-width: 900px; margin: 0 auto; font-size: 64px; }
+    .headline .highlight { font-size: .84em; }
+    .headline .line { line-height: .98; }
+    .lead {
+      width: 860px;
+      margin: 22px auto 0;
+      font-size: 31px;
+      line-height: 1.25;
+      font-weight: 900;
+    }
+    .supplier-copy {
+      width: 860px;
+      margin: 19px auto 0;
+      font-size: 27px;
+      line-height: 1.35;
+    }
+    .event-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      width: 860px;
+      margin: 25px auto 0;
+    }
+    .event-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 92px;
+      padding: 16px 20px;
+      border-radius: 24px;
+      color: var(--krisbow-black);
+      background: var(--krisbow-yellow);
+      box-shadow: 0 14px 30px rgba(32,35,43,.13);
+      font-size: 24px;
+      line-height: 1.2;
+      font-weight: 900;
+    }
+    .event-box .symbol { margin-right: 10px; font-size: 28px; }
+    .registration {
+      display: grid;
+      grid-template-columns: 210px 1fr;
+      align-items: center;
+      gap: 28px;
+      width: 860px;
+      margin: 25px auto 0;
+      padding: 20px 26px 20px 20px;
+      border: 1px solid rgba(49,143,240,.20);
+      border-radius: 32px;
+      background: rgba(255,255,255,.82);
+      box-shadow: 0 22px 48px rgba(29,38,55,.16);
+      text-align: left;
+    }
+    .qr-card {
+      position: relative;
+      width: 190px;
+      height: 190px;
+      overflow: hidden;
+      border: 10px solid #fff;
+      border-radius: 24px;
+      background: #fff;
+      box-shadow: 0 10px 24px rgba(32,35,43,.14);
+    }
+    .qr-card img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 380px;
+      max-width: none;
+      transform: translate(-50%, -53.33%);
+    }
+    .registration-copy strong {
+      display: block;
+      color: var(--primary-dark);
+      font-size: 34px;
+      line-height: 1.1;
+    }
+    .registration-copy span {
+      display: block;
+      margin-top: 12px;
+      font-size: 24px;
+      line-height: 1.25;
+      font-weight: 800;
+    }
+  </style>
+</head>
+<body>
+  <main class="canvas krisbow-canvas">
+    <div class="glow blue"></div><div class="glow amber"></div>
+    <div class="composition composition--center">
+      <header class="topbar"><img class="gs-logo" src="../../../../shared/assets/gs-logo-colour.svg" alt="Global Sources Indonesia"></header>
+      <section class="content">
+        <h1 class="headline">
+          <span class="highlight">Brand Seperti Krisbow</span>
+          <span class="line">Tidak Lahir dari</span>
+          <span class="line">Kebetulan</span>
+        </h1>
+        <p class="lead">Tapi dari bertemu supplier yang tepat</p>
+        <p class="body-copy supplier-copy">Temui ribuan supplier terverifikasi<br>di Global Sources Indonesia</p>
+        <div class="event-row">
+          <div class="event-box"><span class="symbol">📅</span><span>17–19 September 2026</span></div>
+          <div class="event-box"><span class="symbol">📍</span><span>JICC Senayan, Jakarta</span></div>
+        </div>
+        <div class="registration">
+          <div class="qr-card"><img src="../assets/qr-linktree.png" alt="QR code pendaftaran Global Sources Indonesia"></div>
+          <div class="registration-copy">
+            <strong>Daftar Sekarang</strong>
+            <span>linktr.ee/GSI_Register2026</span>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer"><div class="progress"><i></i><i></i><i></i><i></i><i class="active"></i></div><span>05 / 05</span></footer>
+  </main>
+</body>
+</html>
