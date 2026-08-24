@@ -1,0 +1,53 @@
+{
+  "campaign": "Local Icons — Launch Introduction",
+  "slides": [
+    {
+      "number": "01",
+      "headline": "Local Icons",
+      "tagline": "Where Local Becomes Iconic. 🇮🇩",
+      "prompt": "Swipe buat kenalan lebih dekat sama kita"
+    },
+    {
+      "number": "02",
+      "headline": "This Is For You If...",
+      "intro": "Kamu tuh tipe yang...",
+      "points": [
+        "Udah spot trend duluan sebelum viral",
+        "Follow satu creator terus diem-diem pengen merch-nya",
+        "Belanja based on taste, bukan cuma ikut-ikutan hype",
+        "Gen Z / Millennial (17–35), online 24/7",
+        "Atau lagi scouting brand baru buat di-restock"
+      ]
+    },
+    {
+      "number": "03",
+      "headline": "What Is Local Icons?",
+      "body": "Local Icons itu tempatnya brand lokal yang bikin Indonesia makin iconic — yang dipakai, dipake, dicintai, dan dibeli.",
+      "features": ["Creator Brand Marketplace", "Live Commerce Experience", "Stage Activation", "Content Machine"]
+    },
+    {
+      "number": "04",
+      "headline": "Meet The Icons",
+      "body": "Barang-barang yang bakal bikin kamu bilang “gue butuh ini.”",
+      "note": "Product and brand placeholders are ready to replace with confirmed campaign assets."
+    },
+    {
+      "number": "05",
+      "headline": "Why Local Icons?",
+      "intro": "Ini bukan sekadar belanja.",
+      "points": [
+        "Talkshow bareng creator & founder",
+        "Ketemu langsung brand yang selama ini cuma muncul di feed kamu",
+        "Spot yang literally dirancang buat kece di foto",
+        "First access buat drop & promo eksklusif"
+      ]
+    },
+    {
+      "number": "06",
+      "headline": "Where Local Becomes Iconic",
+      "body": "Dan kamu yang tahu duluan.",
+      "cta": "Follow kita sekarang!",
+      "hashtag": "#MeetTheIcons"
+    }
+  ]
+}

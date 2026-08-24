@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1080, initial-scale=1">
+  <title>Krisbow — 01</title>
+  <link rel="stylesheet" href="../../../../shared/styles/system.css">
+  <link rel="stylesheet" href="campaign.css">
+  <style>
+    .composition { --composition-gap: 20px; }
+    .content { display: flex; flex-direction: column; align-items: flex-start; }
+    .krisbow-mark { margin-bottom: 22px; }
+    .headline { max-width: 936px; font-size: 62px; }
+    .headline .final-line { font-size: .76em; white-space: nowrap; }
+    .copy-grid {
+      display: grid;
+      grid-template-columns: 1.22fr .78fr;
+      gap: 18px;
+      width: 936px;
+      margin-top: 26px;
+    }
+    .copy-grid p {
+      margin: 0;
+      padding: 19px 22px;
+      border-radius: 20px;
+      background: rgba(255,255,255,.72);
+      border: 1px solid var(--line);
+    }
+    .cover-photo { width: 936px; height: 330px; margin: 24px 0 0; }
+    .cover-photo img { object-position: center 54%; }
+  </style>
+</head>
+<body>
+  <main class="canvas krisbow-canvas">
+    <div class="glow blue"></div><div class="glow amber"></div>
+    <div class="composition composition--left">
+      <header class="topbar"><img class="gs-logo" src="../../../../shared/assets/gs-logo-colour.svg" alt="Global Sources Indonesia"></header>
+      <section class="content">
+        <div class="krisbow-mark"><img src="../assets/krisbow-logo.png" alt=""></div>
+        <h1 class="headline">
+          <span class="highlight">Namanya Kedengeran</span>
+          <span class="line">Dari Luar Negeri</span>
+          <span class="line final-line">Tapi Aslinya, 100% Indonesia</span>
+        </h1>
+        <div class="copy-grid body-copy">
+          <p><strong>KRISBOW bukan brand impor</strong><br>Itu singkatan dari nama orang —<br><strong>Krisnandi Wibowo</strong></p>
+          <p>Banyak yang salah kira<br><strong>Itu justru bagian dari ceritanya</strong></p>
+        </div>
+        <figure class="krisbow-photo cover-photo"><img src="../assets/booth-cover.png" alt=""></figure>
+      </section>
+    </div>
+    <footer class="footer" style="justify-content:flex-end"><span>01 / 05</span></footer>
+  </main>
+</body>
+</html>

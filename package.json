@@ -1,0 +1,13 @@
+{
+  "name": "global-sources-carousel-library",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "render": "node scripts/render.mjs",
+    "render:png": "node scripts/render.mjs --png",
+    "render:jpg": "node scripts/render.mjs --jpg"
+  },
+  "dependencies": {
+    "playwright": "^1.58.2"
+  }
+}

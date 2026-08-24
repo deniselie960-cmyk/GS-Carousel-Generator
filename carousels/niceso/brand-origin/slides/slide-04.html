@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1080, initial-scale=1">
+  <title>NICE SO Story — Slide 04</title>
+  <link rel="stylesheet" href="../../../../shared/styles/system.css">
+  <style>
+    .headline { max-width:920px; margin:0 auto; font-size:74px; }
+    .body-copy { max-width:770px; margin:30px auto 0; font-size:29px; }
+    .proof { position:relative; margin:58px auto 0; width:840px; height:430px; }
+    .orbit { position:absolute; inset:0; border:2px dashed rgba(49,143,240,.42); border-radius:50%; transform:rotate(-8deg); }
+    .orbit.two { inset:58px 100px; border-color:rgba(243,181,27,.58); transform:rotate(10deg); }
+    .center-badge { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); display:grid; place-items:center; width:220px; height:220px; border-radius:50%; background:radial-gradient(circle at 35% 25%,#61adf8,var(--primary) 45%,var(--primary-dark)); border:8px solid rgba(255,255,255,.52); box-shadow:0 0 0 18px rgba(49,143,240,.10),0 28px 65px rgba(42,58,87,.22); }
+    .center-badge span { color:var(--white); font-size:34px; line-height:1.02; font-weight:900; text-transform:uppercase; }
+    .proof-card { position:absolute; display:flex; align-items:center; gap:15px; padding:17px 20px; border-radius:22px; background:rgba(255,255,255,.86); border:1px solid rgba(32,35,43,.13); backdrop-filter:blur(12px); box-shadow:0 18px 42px rgba(42,58,87,.15); text-align:left; }
+    .proof-card .icon-shell { width:64px; height:64px; border-radius:18px; flex:none; }
+    .proof-card .icon { width:33px; height:33px; }
+    .proof-card b { display:block; font-size:19px; }
+    .proof-card small { display:block; margin-top:4px; color:var(--muted); font-size:13px; }
+    .p1 { left:5px; top:50px; }.p2 { right:0; top:32px; }.p3 { left:8px; bottom:31px; }.p4 { right:5px; bottom:35px; }
+    .closing { margin-top:36px; display:inline-flex; align-items:center; gap:12px; color:var(--amber); font-size:17px; font-weight:700; text-transform:uppercase; letter-spacing:.12em; }
+  </style>
+</head>
+<body>
+  <main class="canvas">
+    <div class="glow red"></div><div class="glow amber"></div>
+    <div class="composition composition--center">
+      <header class="topbar"><img class="gs-logo" src="../../../../shared/assets/gs-logo-colour.svg" alt="Global Sources Indonesia"></header>
+      <section class="content">
+      <h1 class="headline"><span class="highlight">Bukan sekedar mirip.</span><span class="line">Ini bukti.</span></h1>
+      <p class="body-copy">Brand retail lokal bisa <strong>sekeren, sebesar, dan seluas</strong> brand global.</p>
+      <div class="proof">
+        <div class="orbit"></div><div class="orbit two"></div>
+        <div class="center-badge"><span>Brand<br>lokal</span></div>
+        <div class="proof-card p1"><div class="icon-shell"><svg class="icon" viewBox="0 0 24 24"><path d="M3 9 5 3h14l2 6M5 13v8h14v-8M9 21v-6h6v6M3 9a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0"/></svg></div><div><b>200+ gerai</b><small>Skala nyata</small></div></div>
+        <div class="proof-card p2"><div class="icon-shell"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></div><div><b>Standar global</b><small>Rasa lokal</small></div></div>
+        <div class="proof-card p3"><div class="icon-shell"><svg class="icon" viewBox="0 0 24 24"><path d="M12 21s7-4.6 7-11a7 7 0 1 0-14 0c0 6.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></div><div><b>Kota kecil</b><small>Jangkauan luas</small></div></div>
+        <div class="proof-card p4"><div class="icon-shell"><svg class="icon" viewBox="0 0 24 24"><path d="m3 17 6-6 4 4 8-9M16 6h5v5"/></svg></div><div><b>Terus tumbuh</b><small>Sejak 2018</small></div>
+      </section>
+    </div>
+    <footer class="footer"><div class="progress"><i></i><i></i><i></i><i class="active"></i></div><span>04 / 04</span></footer>
+  </main>
+</body>
+</html>

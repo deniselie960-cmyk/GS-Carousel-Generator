@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1080, initial-scale=1">
+  <title>NICE SO Story — Slide 02</title>
+  <link rel="stylesheet" href="../../../../shared/styles/system.css">
+  <style>
+    .headline { margin-top: 0; max-width: 900px; font-size: 69px; }
+    .split { margin-top: 52px; display: grid; grid-template-columns: 1.02fr .98fr; gap: 42px; align-items: center; }
+    .body-copy { margin-top: 0; font-size: 27px; }
+    .facts { display: flex; flex-direction: column; gap: 21px; margin-top: 36px; }
+    .fact { display: flex; align-items: center; gap: 16px; color: var(--muted); font-size: 20px; font-weight: 500; }
+    .fact::before { content:""; width:10px; height:10px; flex:none; border-radius:50%; background:var(--amber); }
+    .fact b { color: var(--ink); font-size: 31px; line-height: 1; }
+    .dial { position: relative; width: 420px; height: 420px; display: grid; place-items: center; border-radius: 50%; background: conic-gradient(from -35deg, var(--amber), var(--primary), #dce9f7, var(--amber)); padding: 2px; box-shadow: 0 30px 70px rgba(42,58,87,.18); }
+    .dial::before { content:""; position:absolute; inset: 15px; border-radius:50%; background:rgba(255,255,255,.92); border:1px solid rgba(32,35,43,.11); }
+    .dial::after { content:""; position:absolute; inset:-28px; border-radius:50%; border:1px dashed rgba(32,35,43,.22); }
+    .dial-center { position: relative; z-index: 2; text-align: center; }
+    .dial-center small { display:block; color:var(--muted); font-size:16px; text-transform:uppercase; letter-spacing:.19em; }
+    .dial-center strong { display:block; margin-top:7px; font-size:87px; line-height:.9; letter-spacing:-.06em; }
+    .dial-center span { display:block; margin-top:18px; color:var(--amber); font-size:16px; font-weight:700; }
+    .team-chip { position:absolute; right:-24px; bottom:37px; z-index:3; display:flex; align-items:center; gap:11px; padding:13px 17px; border-radius:18px; background:var(--white); color:var(--ink); border:1px solid rgba(32,35,43,.10); font-size:14px; font-weight:700; box-shadow:0 18px 42px rgba(42,58,87,.17); }
+    .team-chip .mini-icon { color:var(--primary); width:26px; height:26px; }
+  </style>
+</head>
+<body>
+  <main class="canvas">
+    <div class="glow red"></div><div class="glow amber"></div>
+    <div class="composition composition--left">
+      <header class="topbar"><img class="gs-logo" src="../../../../shared/assets/gs-logo-colour.svg" alt="Global Sources Indonesia"></header>
+      <section class="content">
+      <h1 class="headline"><span class="highlight">Ternyata ini</span><span class="line">racikan asli</span><span class="line">anak bangsa</span></h1>
+      <div class="split">
+        <div>
+          <p class="body-copy">Didirikan <strong>1 Juni 2018</strong> oleh tim yang udah <strong>10+ tahun</strong> main di dunia retail Indonesia. Bukan pemain baru — cuma belum banyak yang tau asal-usulnya.</p>
+          <div class="facts">
+            <div class="fact"><span class="dot"></span><b>2018</b> Tahun berdiri</div>
+            <div class="fact"><span class="dot"></span><b>10+</b> Tahun jam terbang tim</div>
+          </div>
+        </div>
+        <div class="dial">
+          <div class="dial-center"><small>Sejak</small><strong>2018</strong><span>100% tim Indonesia</span></div>
+          <div class="team-chip">
+            <svg class="icon mini-icon" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            Racikan lokal
+          </div>
+        </div>
+      </div>
+      </section>
+    </div>
+    <footer class="footer"><div class="progress"><i></i><i class="active"></i><i></i><i></i></div><span>02 / 04</span></footer>
+  </main>
+</body>
+</html>

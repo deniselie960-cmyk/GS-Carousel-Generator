@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1080, initial-scale=1">
+  <title>Krisbow — Brand Journey 02</title>
+  <link rel="stylesheet" href="../../../../shared/styles/system.css">
+  <link rel="stylesheet" href="campaign.css">
+  <style>
+    .composition { --composition-gap: 22px; }
+    .headline { max-width: 900px; font-size: 64px; }
+    .headline .highlight { font-size: .88em; }
+    
+    .lead-text {
+      width: 900px;
+      margin-top: 18px;
+      font-size: 26px;
+      line-height: 1.4;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .solution-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      width: 900px;
+      margin-top: 24px;
+    }
+
+    .solution-card {
+      display: grid;
+      grid-template-columns: 84px 1fr;
+      align-items: center;
+      gap: 20px;
+      padding: 20px 24px;
+      border-radius: 24px;
+      background: rgba(255, 255, 255, 0.95);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      box-shadow: 0 16px 36px rgba(8, 37, 79, 0.22);
+      color: var(--ink);
+    }
+
+    .solution-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 84px;
+      height: 84px;
+      border-radius: 20px;
+      background: var(--krisbow-yellow);
+      color: var(--krisbow-black);
+      font-size: 38px;
+      box-shadow: 0 8px 18px rgba(255, 208, 0, 0.28);
+    }
+
+    .solution-body h3 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: -0.02em;
+      color: var(--primary-dark);
+    }
+    .solution-body p {
+      margin: 6px 0 0;
+      font-size: 21px;
+      line-height: 1.35;
+      color: #384050;
+      font-weight: 500;
+    }
+
+    .takeaway-badge {
+      width: 900px;
+      margin-top: 26px;
+      padding: 20px 26px;
+      border-radius: 20px;
+      background: rgba(255, 208, 0, 0.16);
+      border: 1.5px solid var(--krisbow-yellow);
+      color: #fff;
+      font-size: 24px;
+      line-height: 1.35;
+      text-align: center;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.14);
+    }
+    .takeaway-badge strong {
+      color: var(--krisbow-yellow);
+    }
+  </style>
+</head>
+<body>
+  <main class="canvas canvas--blue krisbow-canvas">
+    <div class="glow blue"></div><div class="glow amber"></div>
+    <div class="composition composition--left">
+      <header class="topbar">
+        <img class="gs-logo" src="../../../../shared/assets/gs-logo-white.svg" alt="Global Sources Indonesia">
+      </header>
+      <section class="content">
+        <h1 class="headline">
+          <span class="highlight">Mereka Tidak Cuma</span>
+          <span class="line">Menjual Produk.</span>
+          <span class="line">Mereka Menjual Solusi.</span>
+        </h1>
+        
+        <p class="body-copy lead-text">
+          Alih-alih terpaku pada satu kategori, Krisbow berkembang <strong>mengikuti kebutuhan konsumennya</strong>:
+        </p>
+
+        <div class="solution-grid">
+          <div class="solution-card">
+            <div class="solution-icon">🛠️</div>
+            <div class="solution-body">
+              <h3>Memperbaiki Rumah</h3>
+              <p>Tools mekanik, perkakas listrik, bor, hingga peralatan maintenance presisi.</p>
+            </div>
+          </div>
+          
+          <div class="solution-card">
+            <div class="solution-icon">🧹</div>
+            <div class="solution-body">
+              <h3>Membersihkan Rumah</h3>
+              <p>High pressure cleaner, vacuum industrial, sprayer, hingga alat sanitasi.</p>
+            </div>
+          </div>
+          
+          <div class="solution-card">
+            <div class="solution-icon">📦</div>
+            <div class="solution-body">
+              <h3>Mengorganisir Rumah</h3>
+              <p>Storage modular, shelving unit, lighting LED, hingga safety equipment rumah.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="takeaway-badge">
+          Kategori berubah. <strong>Kebutuhan yang diselesaikan tetap sama.</strong>
+        </div>
+      </section>
+    </div>
+    
+    <footer class="footer">
+      <div class="progress">
+        <i></i>
+        <i class="active"></i>
+        <i></i>
+        <i></i>
+      </div>
+      <span>02 / 04</span>
+    </footer>
+  </main>
+</body>
+</html>

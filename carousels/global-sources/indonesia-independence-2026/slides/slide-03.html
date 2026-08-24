@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1080, initial-scale=1">
+  <title>Dirgahayu Republik Indonesia — Option 03</title>
+  <link rel="stylesheet" href="../../../../shared/styles/system.css">
+  <style>
+    :root { --indonesia-red: #e5232a; --indonesia-red-dark: #b80f1b; }
+
+    .option-three {
+      background:
+        linear-gradient(rgba(255,255,255,.50), rgba(255,255,255,.68)),
+        url("../../../../shared/assets/paper-texture.jpg") center / cover no-repeat,
+        #f7f7f4;
+    }
+
+    .option-three::before {
+      opacity: .11;
+      mask-image: radial-gradient(circle at 50% 56%, black, transparent 72%);
+    }
+
+    .red-arch {
+      position: absolute;
+      left: -120px;
+      right: -120px;
+      bottom: -520px;
+      height: 940px;
+      z-index: -2;
+      border-radius: 50% 50% 0 0;
+      background: linear-gradient(155deg, var(--indonesia-red), var(--indonesia-red-dark));
+      box-shadow: 0 -25px 70px rgba(184,15,27,.13);
+    }
+
+    .red-arch::before {
+      content: "";
+      position: absolute;
+      left: 105px;
+      right: 105px;
+      top: 48px;
+      height: 440px;
+      border: 2px dashed rgba(255,255,255,.28);
+      border-radius: 50%;
+    }
+
+    .sunburst {
+      position: absolute;
+      left: 50%;
+      top: 720px;
+      width: 1040px;
+      height: 1040px;
+      z-index: -1;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      opacity: .34;
+      background: repeating-conic-gradient(
+        from 0deg,
+        rgba(229,35,42,.085) 0deg 6deg,
+        transparent 6deg 16deg
+      );
+      mask-image: radial-gradient(circle, black, transparent 68%);
+    }
+
+    .topbar {
+      position: absolute;
+      top: 60px;
+      left: 72px;
+      right: 72px;
+      width: auto;
+      height: 90px;
+      margin: 0;
+      justify-content: center;
+    }
+    .gs-logo { width: 600px; height: 92px; object-position: center; }
+
+    .copy-panel {
+      position: absolute;
+      top: 190px;
+      left: 72px;
+      right: 72px;
+      z-index: 4;
+      padding: 30px 28px 36px;
+      text-align: center;
+      background: rgba(255,255,255,.94);
+      border-top: 5px solid var(--primary);
+      border-bottom: 5px solid var(--indonesia-red);
+      box-shadow: 0 24px 52px rgba(31,40,59,.11);
+    }
+
+    .date {
+      display: inline-flex;
+      align-items: center;
+      gap: 17px;
+      color: var(--primary-dark);
+      font-size: 27px;
+      font-weight: 900;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+    .date::before,
+    .date::after {
+      content: "";
+      width: 66px;
+      height: 3px;
+      background: var(--primary);
+    }
+
+    .headline {
+      margin: 26px auto 0;
+      font-size: 76px;
+      line-height: .92;
+      letter-spacing: -.055em;
+    }
+    .headline .red { display: block; color: var(--indonesia-red); }
+    .headline .line { margin-top: .12em; }
+
+    .flag-stage {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 520px;
+      bottom: 0;
+      z-index: 2;
+      overflow: hidden;
+    }
+
+    .flag-stage img {
+      position: absolute;
+      left: 50%;
+      top: -95px;
+      width: 1010px;
+      height: auto;
+      transform: translateX(-50%);
+      filter: drop-shadow(0 28px 34px rgba(31,40,59,.11));
+    }
+
+    .blue-orbit {
+      position: absolute;
+      left: 50%;
+      top: 745px;
+      width: 860px;
+      height: 430px;
+      z-index: 1;
+      transform: translateX(-50%) rotate(7deg);
+      border: 2px dashed rgba(49,143,240,.27);
+      border-radius: 50%;
+    }
+    .blue-orbit::before,
+    .blue-orbit::after {
+      content: "";
+      position: absolute;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: var(--primary);
+      box-shadow: 0 0 0 7px rgba(49,143,240,.11);
+    }
+    .blue-orbit::before { left: 64px; bottom: 88px; }
+    .blue-orbit::after { right: 72px; top: 74px; }
+  </style>
+</head>
+<body>
+  <main class="canvas option-three">
+    <div class="sunburst"></div>
+    <div class="red-arch"></div>
+    <div class="blue-orbit"></div>
+
+    <header class="topbar">
+      <img class="gs-logo" src="../../../../shared/assets/gs-logo-colour.svg" alt="Global Sources Indonesia">
+    </header>
+
+    <section class="copy-panel">
+      <div class="date">17 Agustus 2026</div>
+      <h1 class="headline">
+        <span class="red">Dirgahayu</span>
+        <span class="line">Republik Indonesia</span>
+      </h1>
+    </section>
+
+    <div class="flag-stage" aria-label="Bendera Merah Putih berkibar dengan burung origami">
+      <img src="../assets/indonesia-flags-ribbon.png" alt="Ilustrasi bendera Indonesia dan pita merah putih">
+    </div>
+  </main>
+</body>
+</html>

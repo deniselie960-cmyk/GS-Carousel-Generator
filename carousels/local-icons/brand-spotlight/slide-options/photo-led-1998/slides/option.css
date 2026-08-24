@@ -1,0 +1,176 @@
+html,
+body {
+  margin: 0;
+  width: 1080px;
+  height: 1350px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.photo-led-origin {
+  position: relative;
+  width: 1080px;
+  height: 1350px;
+  padding: 56px 72px 70px;
+  overflow: hidden;
+  color: #22211d;
+  background: #ffffff;
+}
+
+.option-brandbar {
+  position: relative;
+  z-index: 2;
+  height: 110px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.option-local-icons-logo {
+  width: 478px;
+  height: 106px;
+  object-fit: contain;
+  object-position: left top;
+}
+
+.origin-layout {
+  position: relative;
+  z-index: 2;
+  height: calc(100% - 110px);
+  display: grid;
+  grid-template-columns: 382px 510px;
+  gap: 44px;
+  align-items: center;
+}
+
+.origin-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: none;
+  margin-top: 0;
+  color: #22211d;
+  font-size: initial;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.origin-copy h1,
+.origin-copy p {
+  margin: 0;
+  hyphens: none;
+  word-break: normal;
+  overflow-wrap: normal;
+}
+
+.origin-copy h1 {
+  max-width: 380px;
+  font-size: 54px;
+  line-height: 0.99;
+  letter-spacing: -2.7px;
+  font-weight: 800;
+}
+
+.origin-copy h1 span {
+  color: #7952f5;
+}
+
+.origin-analogy {
+  max-width: 364px;
+  margin-top: 34px !important;
+  font-size: 24px;
+  line-height: 1.34;
+  font-weight: 500;
+}
+
+.origin-story {
+  width: 100%;
+  margin-top: 44px;
+  padding-top: 28px;
+  border-top: 3px solid #22211d;
+}
+
+.origin-year {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 92px;
+  height: 42px;
+  padding: 0 18px;
+  border-radius: 999px;
+  color: #22211d;
+  background: #ffca22;
+  font-size: 23px;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+}
+
+.origin-year::after {
+  content: none;
+  display: none;
+}
+
+.origin-story p {
+  max-width: 374px;
+  margin-top: 18px !important;
+  font-size: 25px;
+  line-height: 1.34;
+  font-weight: 650;
+}
+
+.origin-photo {
+  position: relative;
+  width: 510px;
+  height: 910px;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 42px;
+  background: #050505;
+  box-shadow: 0 28px 58px rgba(28, 26, 22, 0.18);
+}
+
+.origin-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.origin-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: 50% 48%;
+}
+
+.corner-shape {
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.corner-shape--top {
+  width: 188px;
+  height: 188px;
+  top: -110px;
+  right: -66px;
+  background: #00c5b2;
+}
+
+.corner-shape--bottom {
+  width: 132px;
+  height: 132px;
+  left: -75px;
+  bottom: 52px;
+  background: #7952f5;
+}

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1080, initial-scale=1">
+  <title>Krisbow — Brand Journey 04</title>
+  <link rel="stylesheet" href="../../../../shared/styles/system.css">
+  <link rel="stylesheet" href="campaign.css">
+  <style>
+    .composition { --composition-gap: 22px; }
+    .content { display: flex; flex-direction: column; align-items: center; text-align: center; }
+    .headline { max-width: 860px; margin: 0 auto; font-size: 70px; }
+    .headline .highlight { font-size: .88em; }
+
+    .quote-card {
+      position: relative;
+      width: 860px;
+      margin: 28px auto 0;
+      padding: 34px 44px;
+      border-radius: 28px;
+      color: var(--ink);
+      background: var(--krisbow-yellow);
+      box-shadow: 0 20px 48px rgba(8, 37, 79, 0.26);
+    }
+    .quote-card::before {
+      content: "“";
+      position: absolute;
+      left: 24px;
+      top: -24px;
+      color: rgba(17, 18, 20, 0.14);
+      font-size: 130px;
+      line-height: 1;
+      font-weight: 900;
+      pointer-events: none;
+    }
+    .quote-card p {
+      position: relative;
+      margin: 0;
+      font-size: 27px;
+      line-height: 1.38;
+      font-weight: 900;
+      text-align: left;
+    }
+
+    .synthesis-card {
+      width: 860px;
+      margin: 20px auto 0;
+      padding: 20px 28px;
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.26);
+      backdrop-filter: blur(8px);
+      font-size: 24px;
+      line-height: 1.4;
+      color: rgba(255, 255, 255, 0.95);
+    }
+    .synthesis-card strong {
+      color: var(--krisbow-yellow);
+    }
+
+    .closing-photo {
+      width: 860px;
+      height: 310px;
+      margin: 20px auto 0;
+      border-color: var(--krisbow-yellow);
+    }
+    .closing-photo img { object-position: center 52%; }
+  </style>
+</head>
+<body>
+  <main class="canvas canvas--blue krisbow-canvas">
+    <div class="glow blue"></div><div class="glow amber"></div>
+    <div class="composition composition--center">
+      <header class="topbar">
+        <img class="gs-logo" src="../../../../shared/assets/gs-logo-white.svg" alt="Global Sources Indonesia">
+      </header>
+      <section class="content">
+        <h1 class="headline">
+          <span class="highlight">Pelajaran dari</span>
+          <span class="line">Krisbow</span>
+        </h1>
+
+        <blockquote class="quote-card">
+          <p>“Brand tidak harus selamanya dikenal dari produk pertamanya. Yang terpenting adalah memahami masalah apa yang sebenarnya ingin diselesaikan.”</p>
+        </blockquote>
+
+        <div class="synthesis-card body-copy">
+          Krisbow tidak berhenti di “perkakas.” Mereka memperluas definisinya menjadi <strong>“solusi untuk berbagai kebutuhan.”</strong>
+        </div>
+
+        <figure class="krisbow-photo closing-photo">
+          <img src="../assets/booth-conclusion.png" alt="Krisbow Store and Customers">
+        </figure>
+      </section>
+    </div>
+    
+    <footer class="footer">
+      <div class="progress">
+        <i></i>
+        <i></i>
+        <i></i>
+        <i class="active"></i>
+      </div>
+      <span>04 / 04</span>
+    </footer>
+  </main>
+</body>
+</html>

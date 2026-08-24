@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1080, initial-scale=1">
+  <title>Krisbow — 03</title>
+  <link rel="stylesheet" href="../../../../shared/styles/system.css">
+  <link rel="stylesheet" href="campaign.css">
+  <style>
+    .composition { --composition-gap: 22px; }
+    .headline { max-width: 900px; font-size: 66px; }
+    .headline .highlight { font-size: .91em; }
+    .intro { width: 900px; margin: 28px 0 0; }
+    .metric-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; width: 900px; margin-top: 26px; }
+    .metric {
+      padding: 22px 26px;
+      border-radius: 24px;
+      background: rgba(49,143,240,.08);
+      border: 1px solid rgba(49,143,240,.18);
+    }
+    .metric strong { display: block; color: var(--primary-dark); font-size: 38px; line-height: 1.08; }
+    .metric span { display: block; margin-top: 9px; font-size: 24px; line-height: 1.25; font-weight: 700; }
+    .range-photo { width: 900px; height: 320px; margin: 24px 0 0; }
+    .range-photo img { object-position: center 48%; }
+    .reach { width: 900px; margin: 22px 0 0; text-align: center; }
+  </style>
+</head>
+<body>
+  <main class="canvas krisbow-canvas">
+    <div class="glow blue"></div><div class="glow amber"></div>
+    <div class="composition composition--left">
+      <header class="topbar"><img class="gs-logo" src="../../../../shared/assets/gs-logo-colour.svg" alt="Global Sources Indonesia"></header>
+      <section class="content">
+        <h1 class="headline">
+          <span class="highlight">Dari Toko Kecil</span>
+          <span class="line">ke 10.000+</span>
+          <span class="line">Produk</span>
+        </h1>
+        <p class="body-copy intro">Kini Krisbow jadi bagian dari Kawan Lama Group —</p>
+        <div class="metric-row body-copy">
+          <div class="metric"><strong>naungan 30+ brand</strong></div>
+          <div class="metric"><strong>dan 1.200+ toko</strong><span>di seluruh Indonesia</span></div>
+        </div>
+        <figure class="krisbow-photo range-photo"><img src="../assets/product-range.png" alt=""></figure>
+        <p class="body-copy reach">Dealer dan service center-nya<br><strong>sudah menjangkau Asia Tenggara</strong></p>
+      </section>
+    </div>
+    <footer class="footer"><div class="progress"><i></i><i></i><i class="active"></i><i></i><i></i></div><span>03 / 05</span></footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1080, initial-scale=1">
+  <title>Krisbow — Brand Journey Layout 02 — Slide 03</title>
+  <link rel="stylesheet" href="../../../../shared/styles/system.css">
+  <link rel="stylesheet" href="campaign.css">
+  <style>
+    .composition { --composition-gap: 20px; }
+    .headline { max-width: 900px; font-size: 64px; }
+    .headline .highlight { font-size: .92em; }
+
+    .intro {
+      width: 900px;
+      margin: 16px 0 0;
+      font-size: 25px;
+      line-height: 1.4;
+      color: rgba(255, 255, 255, 0.92);
+    }
+
+    .tags-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      width: 900px;
+      margin-top: 18px;
+    }
+
+    .tag-pill {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 14px;
+      border-radius: 16px;
+      font-size: 18px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .02em;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      color: #ffffff;
+      backdrop-filter: blur(8px);
+    }
+    .tag-pill.highlighted {
+      background: var(--krisbow-yellow);
+      border-color: var(--krisbow-yellow);
+      color: var(--krisbow-black);
+    }
+
+    .range-photo {
+      width: 900px;
+      height: 310px;
+      margin: 20px 0 0;
+      border: 6px solid var(--krisbow-yellow);
+    }
+    .range-photo img { object-position: center 50%; }
+
+    .bridge-box {
+      width: 900px;
+      margin-top: 18px;
+      padding: 20px 26px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.10);
+      border: 1px solid rgba(255, 255, 255, 0.20);
+      backdrop-filter: blur(8px);
+      text-align: center;
+      font-size: 23px;
+      line-height: 1.4;
+      color: rgba(255, 255, 255, 0.92);
+    }
+    .bridge-box strong {
+      color: var(--krisbow-yellow);
+    }
+  </style>
+</head>
+<body>
+  <main class="canvas canvas--blue krisbow-canvas">
+    <div class="glow blue"></div><div class="glow amber"></div>
+    <div class="composition composition--left">
+      <header class="topbar">
+        <img class="gs-logo" src="../../../../shared/assets/gs-logo-white.svg" alt="Global Sources Indonesia">
+      </header>
+      <section class="content">
+        <h1 class="headline">
+          <span class="highlight">10.000+ Produk,</span>
+          <span class="line">Tapi Tetap</span>
+          <span class="line">Satu Nama</span>
+        </h1>
+
+        <p class="body-copy intro">
+          Ekspansi kategori membuat Krisbow bisa hadir di banyak kebutuhan sekaligus:
+        </p>
+
+        <div class="tags-container">
+          <div class="tag-pill highlighted">⚡ Tools</div>
+          <div class="tag-pill">🧹 Cleaning</div>
+          <div class="tag-pill">💡 Lighting</div>
+          <div class="tag-pill">📦 Storage</div>
+          <div class="tag-pill">🚗 Automotive</div>
+          <div class="tag-pill highlighted">🏡 Improvement</div>
+        </div>
+
+        <figure class="krisbow-photo range-photo">
+          <img src="../assets/product-range.png" alt="Krisbow Product Categories and Range">
+        </figure>
+
+        <div class="bridge-box body-copy">
+          Dari brand yang dikenal <strong>tukang & profesional</strong>, kini menjadi brand yang semakin dekat dengan <strong>konsumen sehari-hari</strong>.
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="progress">
+        <i></i>
+        <i></i>
+        <i class="active"></i>
+        <i></i>
+      </div>
+      <span>03 / 04</span>
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,42 @@
+{
+  "campaign": "Local Icons — Brand Spotlight — Lily's Pearl",
+  "slides": [
+    {
+      "number": "01",
+      "label": "BRAND SPOTLIGHT",
+      "brand": "Lily's Pearl",
+      "statement": "Literally lebih dari sekedar produk — ini journey mereka"
+    },
+    {
+      "number": "02",
+      "title": "THE JOURNEY",
+      "quote": "You'll see the magic if you keep believing.",
+      "analogy": "Just as diamonds are shaped under pressure, pearls are formed around an irritant—proof that beauty can emerge from adversity.",
+      "origin": "Lily Purnama's fascination with South Sea pearls began—paving the way for an enduring legacy of design, curation, and exploration."
+    },
+    {
+      "number": "03",
+      "type": "product-showcase",
+      "brand": "Lily's Pearl"
+    },
+    {
+      "number": "04",
+      "type": "product-showcase",
+      "brand": "Lily's Pearl"
+    },
+    {
+      "number": "05",
+      "title": "SPECIAL OFFER",
+      "offers": [
+        "Potongan Rp200.000 untuk minimum belanja Rp1.000.000",
+        "Disc 30% untuk belanja Rp20.000.000 ke atas"
+      ]
+    },
+    {
+      "number": "06",
+      "title": "WHERE LOCAL BECOMES ICONIC",
+      "date": "17–19 September 2026",
+      "venue": ["Plenary Hall", "JICC Senayan"]
+    }
+  ]
+}

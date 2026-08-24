@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1080, initial-scale=1">
+  <title>Panduan Freight Forwarder — Slide 02</title>
+  <link rel="stylesheet" href="../../../../shared/styles/system.css">
+  <style>
+    .composition { --composition-gap: 21px; }
+    .headline { margin: 0; font-size: 64px; }
+    .headline .highlight { font-size: .89em; }
+    .body-copy { max-width: 905px; margin-top: 26px; font-size: 25px; }
+    .body-copy strong { color: var(--amber); }
+    .verification-board {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1.02fr .98fr;
+      width: 100%;
+      height: 430px;
+      margin-top: 28px;
+      overflow: hidden;
+      border-radius: 28px;
+      background: rgba(8,42,89,.26);
+      border: 1px solid rgba(255,255,255,.25);
+      box-shadow: 0 22px 54px rgba(7,37,79,.28);
+    }
+    .yard-photo { position: relative; overflow: hidden; }
+    .yard-photo img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center; }
+    .yard-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(10,45,91,.04), rgba(10,45,91,.6)); }
+    .route-stamp {
+      position: absolute;
+      left: 28px;
+      bottom: 28px;
+      width: 315px;
+      padding: 18px 20px;
+      color: var(--white);
+      background: rgba(12,49,96,.86);
+      border: 1px solid rgba(255,255,255,.36);
+      border-radius: 18px;
+      box-shadow: 0 15px 36px rgba(4,25,58,.28);
+      backdrop-filter: blur(5px);
+    }
+    .route-stamp small { display: block; color: rgba(255,255,255,.67); font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+    .route-stamp strong { display: block; margin-top: 7px; font-size: 21px; line-height: 1.2; letter-spacing: -.02em; }
+    .route-stamp strong span { color: var(--amber); }
+    .checklist {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 13px;
+      padding: 27px;
+    }
+    .check-item {
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      align-items: center;
+      gap: 14px;
+      min-height: 92px;
+      padding: 15px 16px;
+      border-radius: 18px;
+      background: rgba(255,255,255,.11);
+      border: 1px solid rgba(255,255,255,.2);
+    }
+    .check-icon {
+      display: grid;
+      place-items: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      color: var(--ink);
+      background: var(--amber);
+      box-shadow: 0 8px 20px rgba(4,27,63,.2);
+    }
+    .check-icon svg { width: 32px; height: 32px; stroke-width: 2.2; }
+    .check-item strong { display: block; color: var(--white); font-size: 21px; line-height: 1.15; }
+    .check-item div > span { display: block; margin-top: 4px; color: rgba(255,255,255,.72); font-size: 16px; line-height: 1.25; }
+  </style>
+</head>
+<body>
+  <main class="canvas canvas--blue">
+    <div class="glow red"></div><div class="glow amber"></div>
+    <div class="composition composition--left">
+      <header class="topbar">
+        <img class="gs-logo" src="../../../../shared/assets/gs-logo-white.svg" alt="Global Sources Indonesia">
+      </header>
+      <section class="content">
+        <h1 class="headline">
+          <span class="highlight">1. Cek pengalaman</span>
+          <span class="line">&amp; legalitasnya</span>
+        </h1>
+        <p class="body-copy">Forwarder yang udah lama handle rute <strong>Tiongkok–Indonesia</strong> biasanya lebih paham regulasi bea cukai &amp; pajak impor. Cek izin usaha resminya juga — biar nggak ketemu yang fiktif.</p>
+        <div class="verification-board">
+          <div class="yard-photo">
+            <img src="../assets/container-yard.jpg" alt="Truk kontainer di area logistik">
+            <div class="route-stamp">
+              <small>Rute yang relevan</small>
+              <strong>Tiongkok <span>→</span> Indonesia</strong>
+            </div>
+          </div>
+          <div class="checklist" aria-label="Tiga hal yang perlu diverifikasi">
+            <div class="check-item">
+              <span class="check-icon"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+              <div><strong>Pengalaman rute</strong><span>Sudah sering handle jalur yang sama</span></div>
+            </div>
+            <div class="check-item">
+              <span class="check-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M6 3h9l3 3v15H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/></svg></span>
+              <div><strong>Paham regulasi</strong><span>Bea cukai dan pajak impor</span></div>
+            </div>
+            <div class="check-item">
+              <span class="check-icon"><svg class="icon" viewBox="0 0 24 24"><path d="m12 3 7 3v5c0 5-3.2 8.4-7 10-3.8-1.6-7-5-7-10V6z"/><path d="m9 12 2 2 4-4"/></svg></span>
+              <div><strong>Izin usaha resmi</strong><span>Pastikan legal, aktif, dan dapat dicek</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="progress" aria-label="Slide 2 dari 4"><i></i><i class="active"></i><i></i><i></i></div>
+      <span>02 / 04</span>
+    </footer>
+  </main>
+</body>
+</html>

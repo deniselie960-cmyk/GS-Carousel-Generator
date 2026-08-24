@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1080, initial-scale=1">
+  <title>Krisbow — Brand Journey 01</title>
+  <link rel="stylesheet" href="../../../../shared/styles/system.css">
+  <link rel="stylesheet" href="campaign.css">
+  <style>
+    .composition { --composition-gap: 20px; }
+    .content { display: flex; flex-direction: column; align-items: flex-start; }
+    .krisbow-mark { margin-bottom: 20px; }
+    .headline { max-width: 936px; font-size: 58px; }
+    .headline .highlight { font-size: .94em; }
+    
+    .story-card {
+      width: 936px;
+      margin-top: 22px;
+      padding: 22px 28px;
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid var(--line);
+      box-shadow: 0 10px 24px rgba(31, 40, 59, 0.06);
+    }
+    .story-card p { margin: 0; }
+    .story-card .desc { margin-top: 10px; font-size: 24px; line-height: 1.42; }
+    .story-card .hook-question {
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px dashed rgba(31, 40, 59, 0.18);
+      color: var(--primary-dark);
+      font-size: 23px;
+      font-weight: 700;
+    }
+
+    .cover-photo { width: 936px; height: 320px; margin: 20px 0 0; }
+    .cover-photo img { object-position: center 55%; }
+
+    .swipe-cue {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: rgba(32,35,43,.60);
+      font-size: 15px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+    }
+    .swipe-cue svg { width: 22px; height: 22px; stroke-width: 2.2; }
+  </style>
+</head>
+<body>
+  <main class="canvas krisbow-canvas">
+    <div class="glow blue"></div><div class="glow amber"></div>
+    <div class="composition composition--left">
+      <header class="topbar">
+        <img class="gs-logo" src="../../../../shared/assets/gs-logo-colour.svg" alt="Global Sources Indonesia">
+      </header>
+      <section class="content">
+        <div class="krisbow-mark"><img src="../assets/krisbow-logo.png" alt="Krisbow"></div>
+        <h1 class="headline">
+          <span class="highlight">Awalnya Jual Perkakas.</span>
+          <span class="line">Sekarang Ada di Hampir</span>
+          <span class="line">Setiap Sudut Rumah.</span>
+        </h1>
+        
+        <div class="story-card body-copy">
+          <p><strong>Krisbow identik dengan tools & perkakas.</strong></p>
+          <p class="desc">Tapi hari ini produknya jauh lebih luas — dari <strong>lampu, cleaning equipment, storage</strong>, sampai kebutuhan rumah tangga.</p>
+          <p class="hook-question">Bagaimana brand perkakas bisa berkembang sejauh itu?</p>
+        </div>
+
+        <figure class="krisbow-photo cover-photo"><img src="../assets/booth-cover.png" alt="Krisbow Store and Booth"></figure>
+      </section>
+    </div>
+    
+    <footer class="footer">
+      <div class="swipe-cue">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        Swipe ke kiri
+      </div>
+      <span>01 / 04</span>
+    </footer>
+  </main>
+</body>
+</html>

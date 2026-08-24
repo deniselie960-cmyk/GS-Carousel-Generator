@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1080, initial-scale=1">
+  <title>Panduan Freight Forwarder — Slide 03</title>
+  <link rel="stylesheet" href="../../../../shared/styles/system.css">
+  <style>
+    .composition { --composition-gap: 20px; }
+    .headline { margin: 0; font-size: 59px; }
+    .headline .highlight { font-size: .76em; }
+    .body-copy { max-width: 915px; margin-top: 24px; font-size: 24px; }
+    .body-copy strong { color: var(--primary-dark); }
+    .freight-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      width: 100%;
+      margin-top: 27px;
+    }
+    .freight-card {
+      position: relative;
+      height: 332px;
+      overflow: hidden;
+      border-radius: 28px;
+      border: 1px solid rgba(32,35,43,.12);
+      box-shadow: 0 20px 45px rgba(42,58,87,.14);
+      isolation: isolate;
+    }
+    .freight-card.air { color: var(--white); background: #173b64; }
+    .freight-card.sea { color: var(--white); background: #163a65; }
+    .freight-card.air::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(9,31,59,.22), rgba(9,31,59,.82)); }
+    .freight-card.sea::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(10,35,67,.05), rgba(10,35,67,.82)); }
+    .freight-card.air > img,
+    .freight-card.sea > img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+    .freight-card.air > img { object-position: 55% center; }
+    .mode-label {
+      position: absolute;
+      left: 24px;
+      top: 23px;
+      z-index: 2;
+    }
+    .mode-label small { display: block; color: var(--amber); font-size: 15px; font-weight: 900; letter-spacing: .15em; text-transform: uppercase; }
+    .mode-label strong { display: block; margin-top: 5px; font-size: 35px; line-height: 1; letter-spacing: -.04em; text-transform: uppercase; }
+    .mode-benefit {
+      position: absolute;
+      left: 24px;
+      bottom: 22px;
+      z-index: 2;
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      color: var(--ink);
+      background: rgba(255,255,255,.9);
+      border: 1px solid rgba(32,35,43,.1);
+      font-size: 17px;
+      font-weight: 700;
+    }
+    .mode-benefit::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: var(--amber); }
+    .service-strip {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-top: 0;
+    }
+    .service {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      min-height: 70px;
+      padding: 10px 12px;
+      text-align: center;
+      border-radius: 17px;
+      background: rgba(255,255,255,.74);
+      border: 1px solid rgba(49,143,240,.2);
+      box-shadow: 0 10px 24px rgba(42,58,87,.08);
+      color: var(--primary-dark);
+      font-size: 17px;
+      line-height: 1.15;
+      font-weight: 700;
+    }
+    .service svg { width: 22px; height: 22px; flex: 0 0 22px; }
+  </style>
+</head>
+<body>
+  <main class="canvas">
+    <div class="glow red"></div><div class="glow amber"></div>
+    <div class="composition composition--left">
+      <header class="topbar">
+        <img class="gs-logo" src="../../../../shared/assets/gs-logo-colour.svg" alt="Global Sources Indonesia">
+      </header>
+      <section class="content">
+        <h1 class="headline">
+          <span class="highlight">2. Pastikan layanannya</span>
+          <span class="line">sesuai kebutuhan</span>
+          <span class="line">bisnismu</span>
+        </h1>
+        <p class="body-copy"><strong>Air freight</strong> buat yang butuh cepat, <strong>sea freight</strong> buat kirim dalam jumlah besar. Cek juga layanan pendukungnya.</p>
+        <div class="freight-grid">
+          <article class="freight-card air">
+            <div class="mode-label"><small>Butuh cepat?</small><strong>Air Freight</strong></div>
+            <img src="../assets/air-freight-photo.jpg" alt="Pesawat kargo dan muatan di bandara">
+            <span class="mode-benefit">Lebih cepat</span>
+          </article>
+          <article class="freight-card sea">
+            <img src="../assets/sea-freight.jpg" alt="Kapal kontainer di laut">
+            <div class="mode-label"><small>Kirim jumlah besar?</small><strong>Sea Freight</strong></div>
+            <span class="mode-benefit">Kapasitas besar</span>
+          </article>
+          <div class="service-strip" aria-label="Layanan pendukung yang perlu dicek">
+            <span class="service"><svg class="icon" viewBox="0 0 24 24"><path d="M6 3h9l3 3v15H6z"/><path d="M14 3v4h4M9 12h6M9 16h4"/></svg>Customs clearance</span>
+            <span class="service"><svg class="icon" viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M8 10h8M8 14h5"/></svg>Tracking real-time</span>
+            <span class="service"><svg class="icon" viewBox="0 0 24 24"><path d="m12 3 7 3v5c0 5-3.2 8.4-7 10-3.8-1.6-7-5-7-10V6z"/><path d="m9 12 2 2 4-4"/></svg>Asuransi</span>
+            <span class="service"><svg class="icon" viewBox="0 0 24 24"><path d="M4 8h7v7H4zM13 4h7v7h-7zM13 13h7v7h-7z"/></svg>Konsolidasi barang</span>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="progress" aria-label="Slide 3 dari 4"><i></i><i></i><i class="active"></i><i></i></div>
+      <span>03 / 04</span>
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1080, initial-scale=1">
+  <title>Krisbow — Brand Journey Layout 02 — Slide 02</title>
+  <link rel="stylesheet" href="../../../../shared/styles/system.css">
+  <link rel="stylesheet" href="campaign.css">
+  <style>
+    .composition { --composition-gap: 22px; }
+    .headline { max-width: 900px; font-size: 64px; }
+    .headline .highlight { font-size: .88em; }
+
+    .lead-text {
+      width: 900px;
+      margin-top: 16px;
+      font-size: 26px;
+      line-height: 1.4;
+      color: var(--ink);
+    }
+
+    .solution-stack {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      width: 900px;
+      margin-top: 22px;
+    }
+
+    .solution-item {
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      align-items: center;
+      gap: 20px;
+      padding: 18px 24px;
+      border-radius: 22px;
+      background: #ffffff;
+      border: 1.5px solid var(--line);
+      box-shadow: 0 10px 24px rgba(31, 40, 59, 0.06);
+    }
+
+    .solution-icon-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80px;
+      height: 80px;
+      border-radius: 18px;
+      background: rgba(49, 143, 240, 0.10);
+      border: 1px solid rgba(49, 143, 240, 0.20);
+      font-size: 36px;
+    }
+
+    .solution-item:nth-child(1) .solution-icon-box {
+      background: rgba(255, 208, 0, 0.20);
+      border-color: var(--krisbow-yellow);
+    }
+
+    .solution-info h3 {
+      margin: 0;
+      font-size: 23px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+    }
+    .solution-info p {
+      margin: 4px 0 0;
+      font-size: 20px;
+      line-height: 1.35;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .bottom-statement {
+      width: 900px;
+      margin-top: 24px;
+      padding: 22px 28px;
+      border-radius: 20px;
+      background: var(--primary-dark);
+      color: #ffffff;
+      font-size: 24px;
+      line-height: 1.35;
+      text-align: center;
+      box-shadow: 0 14px 32px rgba(23, 109, 199, 0.25);
+    }
+    .bottom-statement strong {
+      color: var(--krisbow-yellow);
+    }
+  </style>
+</head>
+<body>
+  <main class="canvas krisbow-canvas">
+    <div class="glow blue"></div><div class="glow amber"></div>
+    <div class="composition composition--left">
+      <header class="topbar">
+        <img class="gs-logo" src="../../../../shared/assets/gs-logo-colour.svg" alt="Global Sources Indonesia">
+      </header>
+      <section class="content">
+        <h1 class="headline">
+          <span class="highlight">Mereka Tidak Cuma</span>
+          <span class="line">Menjual Produk.</span>
+          <span class="line">Mereka Menjual Solusi.</span>
+        </h1>
+
+        <p class="body-copy lead-text">
+          Alih-alih terpaku pada satu kategori, Krisbow berkembang <strong>mengikuti kebutuhan konsumennya</strong>:
+        </p>
+
+        <div class="solution-stack">
+          <div class="solution-item">
+            <div class="solution-icon-box">🛠️</div>
+            <div class="solution-info">
+              <h3>Memperbaiki Rumah</h3>
+              <p>Perkakas mekanik, bor listrik, hand tools, hingga maintenance kit.</p>
+            </div>
+          </div>
+
+          <div class="solution-item">
+            <div class="solution-icon-box">🧹</div>
+            <div class="solution-info">
+              <h3>Membersihkan Rumah</h3>
+              <p>High pressure cleaner, vacuum industrial, sprayer, hingga sanitasi.</p>
+            </div>
+          </div>
+
+          <div class="solution-item">
+            <div class="solution-icon-box">📦</div>
+            <div class="solution-info">
+              <h3>Mengorganisir Rumah</h3>
+              <p>Modular storage, shelving unit, lampu LED, hingga safety equipment.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-statement">
+          Kategori berubah. <strong>Kebutuhan yang diselesaikan tetap sama.</strong>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="progress">
+        <i></i>
+        <i class="active"></i>
+        <i></i>
+        <i></i>
+      </div>
+      <span>02 / 04</span>
+    </footer>
+  </main>
+</body>
+</html>

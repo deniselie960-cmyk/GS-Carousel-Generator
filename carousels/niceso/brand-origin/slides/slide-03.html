@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1080, initial-scale=1">
+  <title>NICE SO Story — Slide 03</title>
+  <link rel="stylesheet" href="../../../../shared/styles/system.css">
+  <style>
+    .headline { margin-top:0; max-width:930px; font-size:65px; }
+    .body-copy { max-width:900px; font-size:25px; }
+    .growth-board { position:relative; margin-top:42px; height:470px; border-radius:34px; overflow:hidden; background:linear-gradient(145deg,rgba(255,255,255,.83),rgba(244,249,255,.70)); border:1px solid rgba(32,35,43,.14); box-shadow:0 22px 55px rgba(42,58,87,.11), inset 0 1px rgba(255,255,255,.9); }
+    .board-grid { position:absolute; inset:0; background-image:linear-gradient(rgba(49,143,240,.10) 1px,transparent 1px),linear-gradient(90deg,rgba(49,143,240,.10) 1px,transparent 1px); background-size:62px 62px; mask-image:linear-gradient(to right,black,transparent); }
+    .chart { position:absolute; inset:38px 42px 48px; }
+    .chart svg { width:100%; height:100%; overflow:visible; }
+    .chart .area { fill:url(#area); }
+    .chart .line { fill:none; stroke:var(--primary); stroke-width:7; stroke-linecap:round; stroke-linejoin:round; filter:drop-shadow(0 0 9px rgba(49,143,240,.32)); }
+    .chart .point { fill:var(--white); stroke:var(--amber); stroke-width:5; }
+    .metric { position:absolute; right:28px; top:28px; z-index:3; min-width:290px; padding:22px 25px 18px; text-align:right; background:#fff; border:1px solid rgba(32,35,43,.10); border-radius:24px; box-shadow:0 18px 42px rgba(42,58,87,.16); }
+    .metric strong { display:block; color:var(--ink); font-size:95px; line-height:.9; letter-spacing:-.065em; }
+    .metric span { display:block; margin-top:10px; color:var(--amber); font-size:18px; font-weight:700; text-transform:uppercase; letter-spacing:.1em; }
+    .from { position:absolute; left:42px; bottom:34px; color:var(--muted); font-size:15px; text-transform:uppercase; letter-spacing:.12em; }
+    .places { position:absolute; right:39px; bottom:30px; display:flex; flex-wrap:wrap; justify-content:flex-end; gap:8px; width:610px; }
+    .places span { padding:8px 11px; border-radius:999px; color:var(--ink); background:rgba(255,255,255,.74); border:1px solid rgba(32,35,43,.13); font-size:12px; }
+  </style>
+</head>
+<body>
+  <main class="canvas">
+    <div class="glow red"></div><div class="glow amber"></div>
+    <div class="composition composition--left">
+      <header class="topbar"><img class="gs-logo" src="../../../../shared/assets/gs-logo-colour.svg" alt="Global Sources Indonesia"></header>
+      <section class="content">
+      <h1 class="headline"><span class="highlight">Diam-diam nyalip</span><span class="line">tanpa nama besar</span><span class="line">dari luar</span></h1>
+      <p class="body-copy">Dari puluhan toko di 2019, kini <strong>200+ gerai</strong> tersebar sampai ke kota kecil dan kabupaten — Jabodetabek, Banten, Jabar, Jateng, Jatim, hingga DIY.</p>
+      <div class="growth-board">
+        <div class="board-grid"></div>
+        <div class="chart">
+          <svg viewBox="0 0 850 340" aria-label="Grafik pertumbuhan dari puluhan menjadi lebih dari 200 gerai">
+            <defs><linearGradient id="area" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#318ff0" stop-opacity=".25"/><stop offset="1" stop-color="#318ff0" stop-opacity="0"/></linearGradient></defs>
+            <path class="area" d="M30 278 C155 278 210 254 300 236 S430 189 520 162 S665 96 810 39 L810 315 L30 315Z"/>
+            <path class="line" d="M30 278 C155 278 210 254 300 236 S430 189 520 162 S665 96 810 39"/>
+            <circle class="point" cx="30" cy="278" r="10"/><circle class="point" cx="300" cy="236" r="10"/><circle class="point" cx="520" cy="162" r="10"/><circle class="point" cx="810" cy="39" r="12"/>
+          </svg>
+        </div>
+        <div class="metric"><strong>200+</strong><span>Gerai nasional</span></div>
+        <div class="from">Puluhan toko · 2019</div>
+        <div class="places"><span>Jabodetabek</span><span>Banten</span><span>Jabar</span><span>Jateng</span><span>Jatim</span><span>DIY</span></div>
+      </div>
+      </section>
+    </div>
+    <footer class="footer"><div class="progress"><i></i><i></i><i class="active"></i><i></i></div><span>03 / 04</span></footer>
+  </main>
+</body>
+</html>

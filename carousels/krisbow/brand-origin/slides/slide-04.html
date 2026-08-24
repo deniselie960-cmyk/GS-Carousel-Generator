@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1080, initial-scale=1">
+  <title>Krisbow — 04</title>
+  <link rel="stylesheet" href="../../../../shared/styles/system.css">
+  <link rel="stylesheet" href="campaign.css">
+  <style>
+    .composition { --composition-gap: 26px; }
+    .headline { max-width: 860px; margin: 0 auto; font-size: 72px; }
+    .headline .highlight { font-size: .88em; }
+    .quote-card {
+      position: relative;
+      width: 850px;
+      margin: 42px auto 0;
+      padding: 46px 54px 48px;
+      border-radius: 36px;
+      color: var(--ink);
+      background: var(--krisbow-yellow);
+      box-shadow: 0 24px 54px rgba(8,37,79,.25);
+    }
+    .quote-card::before {
+      content: "“";
+      position: absolute;
+      left: 30px;
+      top: -20px;
+      color: rgba(17,18,20,.16);
+      font-size: 150px;
+      line-height: 1;
+      font-weight: 900;
+    }
+    .quote-card p { position: relative; margin: 0; font-size: 36px; line-height: 1.35; font-weight: 900; }
+    .closing-photo { width: 820px; height: 360px; margin: 34px auto 0; border-color: var(--krisbow-yellow); }
+    .closing-photo img { object-position: center 52%; }
+  </style>
+</head>
+<body>
+  <main class="canvas canvas--blue krisbow-canvas">
+    <div class="glow blue"></div><div class="glow amber"></div>
+    <div class="composition composition--center">
+      <header class="topbar"><img class="gs-logo" src="../../../../shared/assets/gs-logo-white.svg" alt="Global Sources Indonesia"></header>
+      <section class="content">
+        <h1 class="headline">
+          <span class="highlight">Pelajaran dari</span>
+          <span class="line">Krisbow</span>
+        </h1>
+        <blockquote class="quote-card"><p>“Bukti terbaik dari kualitas lokal,<br>adalah saat orang tidak percaya itu buatan lokal.”</p></blockquote>
+        <figure class="krisbow-photo closing-photo"><img src="../assets/booth-conclusion.png" alt=""></figure>
+      </section>
+    </div>
+    <footer class="footer"><div class="progress"><i></i><i></i><i></i><i class="active"></i><i></i></div><span>04 / 05</span></footer>
+  </main>
+</body>
+</html>

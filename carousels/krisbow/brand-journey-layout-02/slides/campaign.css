@@ -1,0 +1,44 @@
+.krisbow-canvas {
+  --krisbow-yellow: #ffd000;
+  --krisbow-black: #111214;
+  --amber: var(--krisbow-yellow);
+}
+
+.krisbow-canvas .topbar { margin-bottom: 20px; }
+.krisbow-canvas .gs-logo { width: 620px; height: 102px; }
+
+.krisbow-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 68px;
+  padding: 9px 18px;
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--krisbow-yellow);
+  box-shadow: 0 14px 30px rgba(0,0,0,.22);
+}
+.krisbow-mark img { width: 100%; height: 100%; object-fit: contain; }
+
+.krisbow-canvas .headline { margin: 0; }
+.krisbow-canvas .body-copy {
+  color: var(--ink);
+  font-size: 25px;
+  line-height: 1.44;
+  letter-spacing: -.015em;
+}
+.krisbow-canvas.canvas--blue .body-copy { color: rgba(255,255,255,.92); }
+.krisbow-canvas .body-copy strong { font-weight: 900; }
+
+.krisbow-photo {
+  overflow: hidden;
+  border: 8px solid #fff;
+  border-radius: 28px;
+  background: #ddd;
+  box-shadow: 0 24px 54px rgba(29,38,55,.20);
+}
+.krisbow-photo img { width: 100%; height: 100%; display: block; object-fit: cover; }
+
+.krisbow-canvas .progress i.active { background: var(--krisbow-yellow); }
+.krisbow-canvas:not(.canvas--blue) .progress i.active { background: var(--primary); }

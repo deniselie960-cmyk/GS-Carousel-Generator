@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1080, initial-scale=1">
+  <title>Krisbow — 02</title>
+  <link rel="stylesheet" href="../../../../shared/styles/system.css">
+  <link rel="stylesheet" href="campaign.css">
+  <style>
+    .composition { --composition-gap: 26px; }
+    .headline { max-width: 900px; font-size: 67px; }
+    .headline .highlight { font-size: .9em; }
+    .timeline {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 54px;
+      width: 900px;
+      margin-top: 52px;
+    }
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 80px;
+      right: 80px;
+      top: 44px;
+      height: 7px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.28);
+    }
+    .moment { position: relative; padding-top: 88px; }
+    .moment::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 20px;
+      width: 54px;
+      height: 54px;
+      transform: translateX(-50%);
+      border: 10px solid var(--primary-dark);
+      border-radius: 50%;
+      background: var(--krisbow-yellow);
+      box-shadow: 0 0 0 7px rgba(255,208,0,.15);
+    }
+    .moment-card {
+      min-height: 310px;
+      padding: 32px 30px;
+      border-radius: 30px;
+      color: var(--ink);
+      background: #fff;
+      border: 1px solid rgba(255,255,255,.48);
+      box-shadow: 0 22px 48px rgba(8,37,79,.24);
+    }
+    .moment-card p { margin: 0; font-size: 28px; line-height: 1.45; }
+    .moment-card strong { font-size: 1.15em; font-weight: 900; }
+  </style>
+</head>
+<body>
+  <main class="canvas canvas--blue krisbow-canvas">
+    <div class="glow blue"></div><div class="glow amber"></div>
+    <div class="composition composition--center">
+      <header class="topbar"><img class="gs-logo" src="../../../../shared/assets/gs-logo-white.svg" alt="Global Sources Indonesia"></header>
+      <section class="content">
+        <h1 class="headline">
+          <span class="highlight">Lahir dari Krisis,</span>
+          <span class="line">Bukan dari</span>
+          <span class="line">Modal Besar.</span>
+        </h1>
+        <div class="timeline">
+          <article class="moment"><div class="moment-card"><p><strong>Semua dimulai tahun 1955 —</strong><br>toko perkakas 3x3 meter<br>di Glodok, Jakarta</p></div></article>
+          <article class="moment"><div class="moment-card"><p><strong>1997, ekonomi Indonesia ambruk.</strong><br>Alih-alih mundur, Kawan Lama justru berani<br>menciptakan brand perkakas sendiri</p></div></article>
+        </div>
+      </section>
+    </div>
+    <footer class="footer"><div class="progress"><i></i><i class="active"></i><i></i><i></i><i></i></div><span>02 / 05</span></footer>
+  </main>
+</body>
+</html>
