@@ -1,0 +1,39 @@
+{
+  "campaign": "Local Icons — Brand Spotlight — Kokocetak",
+  "slides": [
+    {
+      "number": "01",
+      "copy": [
+        "BRAND SPOTLIGHT",
+        "Literally lebih dari sekedar produk — ini journey mereka."
+      ]
+    },
+    {
+      "number": "02",
+      "copy": [
+        "Kokocetak lahir dari kata sederhana: \"Koko\" yang identik dengan pedagang chinese, dan \"Cetak\" sebagai dunia percetakan, Berawal dari satu mesin cetak dan ruang kecil, semuanya dijalankan dengan mencoba, gagal, lalu mencoba lagi.",
+        "Dari sekedar cetak kartu e-wallet, Kokocetak terus berkembang mengikuti kebutuhan inovasi. Muncul ide-ide yang lebih unik, lebih personal, dan lebih dekat dengan pelanggan. Salah satunya \"KokoPay\" gantungan kunci e-wallet custom yang bisa dibuat sesuai keinginan."
+      ]
+    },
+    {
+      "number": "03",
+      "copy": [
+        "Hari demi hari, pelanggan mulai datang. Bukan hanya untuk membeli, tapi untuk menciptakan sesuatu yang punya arti-hadiah, kenangan, atau sekedar hal kecil yang berbeda.",
+        "Hari ini, Kokocetak bukan hanya tempat cetak.",
+        "Tapi tempat di mana ide kecil bisa jadi sesuatu yang nyata",
+        "Dan perjalanan ini masih terus berjalan"
+      ]
+    },
+    {
+      "number": "04",
+      "type": "product-collage"
+    },
+    {
+      "number": "05",
+      "copy": [
+        "Promo tukar kartu e-wallet bekas/rusak menjadi Kokopay",
+        "*slot terbatas"
+      ]
+    }
+  ]
+}

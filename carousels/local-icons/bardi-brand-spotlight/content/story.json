@@ -1,0 +1,41 @@
+{
+  "campaign": "Local Icons — Brand Spotlight — BARDI",
+  "slides": [
+    {
+      "number": "01",
+      "copy": [
+        "BRAND SPOTLIGHT",
+        "Bardi",
+        "Literally lebih dari sekedar produk — ini journey mereka."
+      ]
+    },
+    {
+      "number": "02",
+      "copy": [
+        "“Perjalanan BARDI dimulai dari sebuah visi untuk membangun brand teknologi Indonesia yang mampu terus berkembang dan memberikan kontribusi bagi industri elektronik Tanah Air.",
+        "Di tahun 2020, BARDI memulai langkahnya dengan membangun fondasi perusahaan, mulai dari pengembangan SDM, penyusunan SOP, pemilihan vendor, hingga memperkuat sistem operasional sebagai dasar untuk bertumbuh.",
+        "Memasuki 2021, perjalanan tersebut dilanjutkan melalui Grand Launching BARDI, menjadi momentum untuk memperkenalkan BARDI secara lebih luas sebagai brand teknologi dan smart home Indonesia.",
+        "Namun perjalanan BARDI tidak berhenti di pasar dalam negeri. Pada 2024, BARDI membawa misi Net Export, dengan tujuan memperluas jangkauan produk Indonesia hingga mampu bersaing di pasar internasional.",
+        "Langkah berikutnya semakin besar. Di 2027, BARDI menargetkan masuk lebih dalam ke industri melalui pembangunan industri hulu elektronik, sebagai bagian dari upaya meningkatkan kemampuan serta kemandirian produksi elektronik di Indonesia.",
+        "Hingga akhirnya menuju Visi BARDI 2030. Sebuah visi untuk membawa BARDI semakin jauh dari sekedar sebuah brand smart home, menjadi bagian dari ekosistem teknologi dan industri elektronik Indonesia yang mandiri, inovatif, dan mampu bersaing secara global.”"
+      ]
+    },
+    {
+      "number": "03",
+      "type": "product-collage",
+      "products": [
+        "Smart IR Remote Control with Temperature & Humidity Display",
+        "Smart Plug BLE + Wi-Fi Version",
+        "IP Camera Indoor PTZ Syno"
+      ]
+    },
+    {
+      "number": "04",
+      "type": "product-collage",
+      "products": [
+        "Smart Door Lock Z01",
+        "IP Camera Fixed Outdoor A50"
+      ]
+    }
+  ]
+}

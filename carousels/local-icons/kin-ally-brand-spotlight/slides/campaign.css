@@ -1,0 +1,81 @@
+@font-face{font-family:"Gotham LI";src:local("Gotham Book"),local("Gotham-Book");font-weight:400}
+@font-face{font-family:"Gotham LI";src:local("Gotham Bold"),local("Gotham-Bold");font-weight:700}
+@font-face{font-family:"Gotham LI";src:local("Gotham Black"),local("Gotham-Black");font-weight:900}
+
+:root{--ink:#22211d;--paper:#fff;--cream:#fff9ed;--teal:#00c5b2;--purple:#7952f5;--blue:#268cff;--yellow:#ffca22;--fiord:#43556b}
+*{box-sizing:border-box}
+html,body{width:1080px;height:1350px;margin:0;overflow:hidden}
+body{font-family:"Gotham LI",Gotham,Arial,sans-serif;color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased}
+h1,p,figure{margin:0}
+.canvas{position:relative;width:1080px;height:1350px;overflow:hidden;background:var(--paper);isolation:isolate}
+.frame{position:relative;z-index:3;width:100%;height:100%;padding:62px 72px 68px;display:flex;flex-direction:column}
+.brandbar{position:relative;z-index:12;height:112px;display:flex;align-items:flex-start;flex:0 0 auto}
+.li-horizontal{position:relative;z-index:13;display:block;width:478px;height:106px;object-fit:contain;object-position:left top}
+.orb{position:absolute;z-index:0;border-radius:50%;pointer-events:none}
+.orb--top{width:330px;height:330px;right:-150px;top:-160px;background:var(--teal)}
+.orb--bottom{width:370px;height:250px;left:-205px;bottom:-135px;background:var(--yellow);transform:rotate(12deg)}
+.photo{position:absolute;overflow:hidden;border-radius:40px;border:2px solid rgba(255,255,255,.84);background:#eee;box-shadow:0 24px 54px rgba(34,33,29,.16)}
+.photo img{display:block;width:100%;height:100%;object-fit:cover}
+
+/* Slide 01 — standard Local Icons spotlight cover */
+.cover::after{content:"";position:absolute;z-index:8;inset:28px;border:1.5px solid rgba(34,33,29,.16);pointer-events:none}
+.cover .orb--top{background:var(--teal)}
+.cover .orb--bottom{background:var(--blue)}
+.cover-main{position:relative;flex:1}
+.cover-photo{right:-10px;top:92px;width:408px;height:830px;transform:rotate(1.2deg)}
+.cover-photo img{object-position:54% center}
+.cover-copy{position:absolute;z-index:5;left:0;top:164px;width:565px}
+.cover-eyebrow{font-size:31px;line-height:1;font-weight:900;letter-spacing:.18em}
+.cover-logo{display:block;width:500px;height:150px;margin-top:45px;object-fit:contain;object-position:left center}
+.cover-statement{width:490px;margin-top:42px;font-size:53px;line-height:1.075;font-weight:900;letter-spacing:-.048em}
+.cover-statement .literally{font-style:italic;margin-right:.15em}
+.cover-statement .accent{color:var(--purple)}
+.cover-swipe{position:absolute;z-index:9;left:72px;bottom:76px;display:flex;align-items:center;gap:15px;font-size:25px;line-height:1;font-weight:900;letter-spacing:.08em}
+.cover-swipe img{display:block;width:48px;height:48px;object-fit:contain}
+
+/* Slide 02 — editorial information */
+.story{background:var(--cream)}
+.story .orb--top{background:var(--yellow)}
+.story .orb--bottom{background:var(--purple)}
+.story-layout{position:relative;flex:1}
+.story-photo{left:0;top:92px;width:485px;height:960px;transform:rotate(-1deg)}
+.story-photo img{object-position:52% center}
+.story-copy{position:absolute;z-index:5;right:0;top:128px;width:424px;padding:37px 34px 40px;border-radius:34px;background:#fff;box-shadow:0 20px 46px rgba(34,33,29,.13);font-size:25px;line-height:1.39;font-weight:700;letter-spacing:-.024em}
+.story-copy::before{content:"";display:block;width:126px;height:11px;margin-bottom:27px;border-radius:99px;background:linear-gradient(90deg,var(--yellow),var(--teal))}
+.story-copy strong{font-weight:900;color:var(--fiord)}
+
+/* Slides 03–04 — product-only photo showcases */
+.products-a{background:var(--cream)}
+.products-a .orb--top{background:var(--yellow)}
+.products-a .orb--bottom{background:var(--teal)}
+.products-b .orb--top{background:var(--blue)}
+.products-b .orb--bottom{background:var(--purple)}
+.product-stage{position:relative;flex:1}
+.products-a .product-main{left:0;top:82px;width:590px;height:960px;transform:rotate(-1.3deg)}
+.products-a .product-main img{object-position:51% 63%}
+.products-a .product-side{right:0;top:142px;width:340px;height:760px;transform:rotate(1.9deg)}
+.products-a .product-side img{object-position:54% 64%}
+.products-a .product-detail{right:32px;bottom:48px;width:315px;height:300px;transform:rotate(-1deg)}
+.products-a .product-detail img{object-position:48% 91%}
+.products-b .product-main{right:0;top:74px;width:570px;height:968px;transform:rotate(1.1deg)}
+.products-b .product-main img{object-position:50% 58%}
+.products-b .product-side{left:0;top:120px;width:385px;height:580px;transform:rotate(-1.7deg)}
+.products-b .product-side img{object-position:50% 76%}
+.products-b .product-detail{left:40px;bottom:52px;width:420px;height:430px;transform:rotate(1.1deg)}
+.products-b .product-detail img{object-position:54% 75%}
+
+/* Slide 05 — Local Icons offer cards */
+.offers .orb--top{background:var(--purple)}
+.offers .orb--bottom{background:var(--teal)}
+.offer-layout{position:relative;flex:1}
+.offer-copy{position:absolute;z-index:6;left:0;top:86px;width:505px}
+.offer-title{font-size:76px;line-height:.92;font-weight:900;letter-spacing:-.06em;color:var(--fiord)}
+.offer-title::after{content:"";display:block;width:140px;height:13px;margin-top:30px;border-radius:99px;background:linear-gradient(90deg,var(--yellow),var(--teal))}
+.offer-stack{display:flex;flex-direction:column;gap:18px;margin-top:47px}
+.offer-card{min-height:126px;padding:28px 31px;border-radius:31px;display:flex;align-items:center;box-shadow:0 18px 40px rgba(34,33,29,.13);font-size:38px;line-height:1;font-weight:900;letter-spacing:-.04em}
+.offer-card:nth-child(1){width:430px;background:#fff}
+.offer-card:nth-child(2){width:452px;margin-left:22px;background:var(--yellow)}
+.offer-card:nth-child(3){width:474px;margin-left:44px;background:var(--purple);color:#fff}
+.offer-mix{display:inline-flex;margin-top:28px;padding:18px 27px;border-radius:999px;background:var(--ink);color:#fff;font-size:25px;line-height:1;font-weight:900}
+.offer-photo{right:-10px;top:108px;width:390px;height:895px;transform:rotate(1.2deg)}
+.offer-photo img{object-position:54% center}

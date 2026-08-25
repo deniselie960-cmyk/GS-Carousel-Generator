@@ -36,6 +36,7 @@ Rendered PNGs are visual references only. Edit the HTML, CSS, JSON, SVG, and sou
 - Keep the Local Icons lockup, headline, copy, and main visual on a shared alignment axis.
 - Decorative shapes may bleed beyond the canvas; important text, logos, faces, products, dates, and CTAs may not.
 - Leave deliberate breathing room around the logo. Do not let a headline, card, or photograph appear attached to it.
+- Do not overlap primary text or logos with photographs, cards, or other primary content blocks. Maintain at least `32px` of clearly visible separation at the `1080px` working size; prefer `48–72px` between major elements when space permits. If the gap is unclear, add a line break, reduce the type or image size, or reposition the elements before rendering.
 
 The design should remain legible in an Instagram feed without zooming. If a slide needs more than one reading pass, reduce the copy or split the information across slides.
 
@@ -291,6 +292,7 @@ Use these as a starting point for new Local Icons campaigns. Campaign CSS may re
 - [ ] The approved Local Icons lockup is used without alteration.
 - [ ] Global Sources and the three show marks are intact, in the approved order, and legible.
 - [ ] The logo has clear space and aligns with the main composition.
+- [ ] Primary text and logos do not overlap photographs or other primary content blocks, with at least `32px` of visible separation and preferably `48–72px` between major elements.
 - [ ] White remains the dominant field on standard information slides.
 - [ ] Teal and purple lead the accent system; blue and yellow support it.
 - [ ] Edge shapes are intentionally cropped and do not obstruct content.
