@@ -27,6 +27,16 @@ Use references in this order:
 
 Rendered PNGs are visual references only. Edit the HTML, CSS, JSON, SVG, and source images instead of editing rendered output.
 
+### Campaign development notes
+
+Before creating, editing, or rendering any slide, inspect the campaign's `thoughts.md` file first. Read it completely to understand the established design steps, approved direction, copy constraints, asset selection, layout decisions, revision history, and outstanding QA items.
+
+- Treat `thoughts.md` as the campaign-specific development log and use it together with this design guide.
+- The user's latest explicit instruction always takes precedence over older notes in `thoughts.md`.
+- Confirm that the planned change is consistent with the recorded spacing, branding, copy, and output requirements before modifying slide files.
+- Update `thoughts.md` after a material design or content change so the next development pass starts from accurate information.
+- If a campaign does not yet contain `thoughts.md`, create it before substantial slide development begins.
+
 ## 3. Format and safe area
 
 - Design at `1080 × 1350px` in a `4:5` portrait ratio.
@@ -287,6 +297,7 @@ Use these as a starting point for new Local Icons campaigns. Campaign CSS may re
 
 ## 15. Final QA checklist
 
+- [ ] The campaign's `thoughts.md` was inspected before development and updated after material changes.
 - [ ] Canvas is `1080 × 1350px`; exported artwork is sharp.
 - [ ] Important content stays inside the text-safe area.
 - [ ] The approved Local Icons lockup is used without alteration.
