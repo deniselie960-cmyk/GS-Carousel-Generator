@@ -1,0 +1,39 @@
+{
+  "campaign": "Local Icons — Brand Spotlight — Mediatech",
+  "slides": [
+    {
+      "number": "01",
+      "brand": "Mediatech",
+      "copy": [
+        "BRAND SPOTLIGHT",
+        "Literally lebih dari sekedar produk — ini journey mereka."
+      ]
+    },
+    {
+      "number": "02",
+      "copy": [
+        "Mediatech Indonesia adalah perusahaan/brand Indonesia yang menyediakan berbagai produk gadget, travel accessories, dan aksesori komputer. Produk yang ditawarkan cukup beragam. Di kanal resminya saat ini terdapat sekitar 110 produk."
+      ]
+    },
+    {
+      "number": "03",
+      "type": "product-showcase"
+    },
+    {
+      "number": "04",
+      "type": "product-showcase"
+    },
+    {
+      "number": "05",
+      "copy": ["Promo 20% all item"]
+    },
+    {
+      "number": "06",
+      "copy": [
+        "Where Local Becomes Iconic",
+        "17-19 September 2026",
+        "at Hall B, JICC Senayan"
+      ]
+    }
+  ]
+}

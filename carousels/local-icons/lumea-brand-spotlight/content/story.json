@@ -1,0 +1,26 @@
+{
+  "campaign": "Local Icons — Brand Spotlight — Lumea",
+  "slides": [
+    {
+      "number": "01",
+      "copy": [
+        "BRAND SPOTLIGHT",
+        "Literally lebih dari sekedar produk — ini journey mereka."
+      ]
+    },
+    {
+      "number": "02",
+      "copy": [
+        "Lumea Kitchen berfokus pada peralatan dapur, food storage, kitchen organization, dan household products. Karakter produknya cukup jelas: fungsional, praktis, dan aesthetic. Salah satu kekuatan Lumea adalah product naming dan design yang sangat lifestyle-oriented. Mereka memiliki lini seperti Brooks, Shannon, Ginnest, Elysian, dan Luminia, sehingga produk yang sebenarnya merupakan kebutuhan rumah tangga biasa dibuat terasa lebih seperti lifestyle product."
+      ]
+    },
+    {
+      "number": "03",
+      "type": "product-showcase"
+    },
+    {
+      "number": "04",
+      "type": "product-showcase"
+    }
+  ]
+}

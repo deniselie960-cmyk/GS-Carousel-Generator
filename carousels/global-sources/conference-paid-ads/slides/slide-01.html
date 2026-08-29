@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1080, initial-scale=1" />
+    <title>Global Sources Indonesia — Conference Schedule</title>
+    <style>
+      @font-face {
+        font-family: "Gotham Conference";
+        src: local("Gotham Book"), local("Gotham-Book");
+        font-style: normal;
+        font-weight: 400;
+      }
+
+      @font-face {
+        font-family: "Gotham Conference";
+        src: local("Gotham Medium"), local("Gotham-Medium");
+        font-style: normal;
+        font-weight: 500;
+      }
+
+      @font-face {
+        font-family: "Gotham Conference";
+        src: local("Gotham Bold"), local("Gotham-Bold");
+        font-style: normal;
+        font-weight: 700;
+      }
+
+      @font-face {
+        font-family: "Gotham Conference";
+        src: local("Gotham Black"), local("Gotham-Black");
+        font-style: normal;
+        font-weight: 900;
+      }
+
+      :root {
+        --canvas-width: 1080px;
+        --canvas-height: 1350px;
+        --blue: #3695f5;
+        --yellow: #ffbd0c;
+        --ink: #202635;
+        --white: #fff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: var(--canvas-width);
+        height: var(--canvas-height);
+        margin: 0;
+        overflow: hidden;
+        background: #f5f5f4;
+        font-family: "Gotham Conference", Gotham, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: geometricPrecision;
+      }
+
+      .canvas {
+        position: relative;
+        width: var(--canvas-width);
+        height: var(--canvas-height);
+        overflow: hidden;
+        isolation: isolate;
+        background: #f7f7f5 url("../assets/paper-background.png") center / 100% 100% no-repeat;
+      }
+
+      .artwork {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        object-fit: contain;
+      }
+
+      .decor-top-left,
+      .decor-bottom-left {
+        z-index: 1;
+      }
+
+      .logos {
+        z-index: 2;
+      }
+
+      .decor-globe {
+        z-index: 7;
+      }
+
+      .schedule {
+        position: absolute;
+        inset: 0;
+        z-index: 4;
+      }
+
+      .session {
+        position: absolute;
+        left: 66px;
+        width: 936px;
+        color: var(--white);
+        background: var(--blue);
+        border-radius: 27px;
+      }
+
+      .session--one {
+        top: 298px;
+        height: 290px;
+      }
+
+      .session--two {
+        top: 603px;
+        height: 301px;
+      }
+
+      .session--three {
+        top: 920px;
+        height: 317px;
+      }
+
+      .session-title {
+        position: absolute;
+        left: 50px;
+        top: 34px;
+        width: 830px;
+        margin: 0;
+        font-size: 30.5px;
+        line-height: 1.18;
+        letter-spacing: -0.55px;
+        font-weight: 900;
+      }
+
+      .session--two .session-title {
+        top: 35px;
+        width: 790px;
+      }
+
+      .session--three .session-title {
+        top: 34px;
+        width: 820px;
+      }
+
+      .schedule-bar {
+        position: absolute;
+        left: 30px;
+        right: 24px;
+        height: 65px;
+        display: grid;
+        grid-template-columns: 230px 405px 1fr;
+        align-items: center;
+        color: var(--ink);
+        background: var(--yellow);
+        border-radius: 13px;
+        padding: 0 17px;
+      }
+
+      .session--one .schedule-bar {
+        top: 118px;
+      }
+
+      .session--two .schedule-bar {
+        top: 116px;
+      }
+
+      .session--three .schedule-bar {
+        top: 152px;
+      }
+
+      .schedule-field {
+        display: flex;
+        align-items: center;
+        min-width: 0;
+        gap: 12px;
+        white-space: nowrap;
+        font-size: 24px;
+        line-height: 1;
+        font-weight: 500;
+        letter-spacing: -0.35px;
+      }
+
+      .schedule-field img {
+        flex: none;
+        width: auto;
+        object-fit: contain;
+        filter: brightness(0) saturate(100%) invert(12%) sepia(13%) saturate(1223%) hue-rotate(185deg) brightness(94%) contrast(91%);
+      }
+
+      .schedule-field--time img {
+        height: 32px;
+      }
+
+      .schedule-field--date img {
+        height: 32px;
+      }
+
+      .schedule-field--location {
+        gap: 13px;
+      }
+
+      .schedule-field--location img {
+        height: 39px;
+      }
+
+      .speaker-row {
+        position: absolute;
+        left: 50px;
+        right: 50px;
+        display: grid;
+        grid-template-columns: 434px 1fr;
+        column-gap: 0;
+      }
+
+      .session--one .speaker-row {
+        top: 198px;
+      }
+
+      .session--two .speaker-row {
+        top: 196px;
+      }
+
+      .session--three .speaker-row {
+        top: 228px;
+      }
+
+      .speaker-row--single {
+        grid-template-columns: 1fr;
+      }
+
+      .speaker-name,
+      .speaker-role {
+        margin: 0;
+      }
+
+      .speaker-name {
+        font-size: 22.5px;
+        line-height: 1.18;
+        font-weight: 900;
+        letter-spacing: -0.25px;
+      }
+
+      .speaker-role {
+        margin-top: 4px;
+        font-size: 17.5px;
+        line-height: 1.2;
+        font-weight: 400;
+        letter-spacing: -0.15px;
+      }
+
+      [contenteditable="true"] {
+        cursor: text;
+      }
+
+      [contenteditable="true"]:focus {
+        outline: 2px dashed rgba(255, 255, 255, 0.78);
+        outline-offset: 4px;
+        border-radius: 3px;
+      }
+
+      .schedule-bar [contenteditable="true"]:focus {
+        outline-color: rgba(32, 38, 53, 0.6);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="canvas" aria-label="Global Sources Indonesia conference schedule">
+      <img class="artwork decor-top-left" src="../assets/decor-top-left.png" alt="" />
+      <img class="artwork decor-bottom-left" src="../assets/decor-bottom-left.png" alt="" />
+      <img class="artwork logos" src="../assets/event-logos.png" alt="Global Sources Electronics, Home Appliances, and Gifts & Home Indonesia" />
+
+      <section class="schedule" aria-label="Conference sessions">
+        <article class="session session--one">
+          <h1 class="session-title" contenteditable="true" spellcheck="false">Bikin Brand Kamu Jadi Top of Mind - Building a<br />World-Class Brand: Mastering the Indonesian Market</h1>
+          <div class="schedule-bar">
+            <div class="schedule-field schedule-field--time">
+              <img src="../assets/icon-clock.png" alt="" />
+              <span contenteditable="true" spellcheck="false">13.00 - 14.00</span>
+            </div>
+            <div class="schedule-field schedule-field--date">
+              <img src="../assets/icon-calendar.png" alt="" />
+              <span contenteditable="true" spellcheck="false">Kamis, 17 September 2026</span>
+            </div>
+            <div class="schedule-field schedule-field--location">
+              <img src="../assets/icon-location.png" alt="" />
+              <span contenteditable="true" spellcheck="false">JICC Senayan</span>
+            </div>
+          </div>
+          <div class="speaker-row">
+            <div class="speaker">
+              <p class="speaker-name" contenteditable="true" spellcheck="false">Fritz Ronald Winata</p>
+              <p class="speaker-role" contenteditable="true" spellcheck="false">Country Manager, SUNRATE Indonesia</p>
+            </div>
+            <div class="speaker">
+              <p class="speaker-name" contenteditable="true" spellcheck="false">Klemens Rahardja</p>
+              <p class="speaker-role" contenteditable="true" spellcheck="false">Founder, The Entrepreneurs Society</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="session session--two">
+          <h2 class="session-title" contenteditable="true" spellcheck="false">Strategi Import Barang Berkualitas<br />dengan Profit Maksimal</h2>
+          <div class="schedule-bar">
+            <div class="schedule-field schedule-field--time">
+              <img src="../assets/icon-clock.png" alt="" />
+              <span contenteditable="true" spellcheck="false">13.00 - 14.00</span>
+            </div>
+            <div class="schedule-field schedule-field--date">
+              <img src="../assets/icon-calendar.png" alt="" />
+              <span contenteditable="true" spellcheck="false">Kamis, 17 September 2026</span>
+            </div>
+            <div class="schedule-field schedule-field--location">
+              <img src="../assets/icon-location.png" alt="" />
+              <span contenteditable="true" spellcheck="false">JICC Senayan</span>
+            </div>
+          </div>
+          <div class="speaker-row speaker-row--single">
+            <div class="speaker">
+              <p class="speaker-name" contenteditable="true" spellcheck="false">Rizkita Bagus Perdhana, S.Kom., M.M., CPS</p>
+              <p class="speaker-role" contenteditable="true" spellcheck="false">Anggota Komtap Marketplace &amp; Ekonomi Kreatif APTIKNAS</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="session session--three">
+          <h2 class="session-title" contenteditable="true" spellcheck="false">MallAPTIKNAS: Beyond the Marketplace -<br />Membangun Ekosistem Digital dan Industri<br />ICT Indonesia</h2>
+          <div class="schedule-bar">
+            <div class="schedule-field schedule-field--time">
+              <img src="../assets/icon-clock.png" alt="" />
+              <span contenteditable="true" spellcheck="false">13.00 - 14.00</span>
+            </div>
+            <div class="schedule-field schedule-field--date">
+              <img src="../assets/icon-calendar.png" alt="" />
+              <span contenteditable="true" spellcheck="false">Sabtu, 19 September 2026</span>
+            </div>
+            <div class="schedule-field schedule-field--location">
+              <img src="../assets/icon-location.png" alt="" />
+              <span contenteditable="true" spellcheck="false">JICC Senayan</span>
+            </div>
+          </div>
+          <div class="speaker-row speaker-row--single">
+            <div class="speaker">
+              <p class="speaker-name" contenteditable="true" spellcheck="false">Naviananda Utama</p>
+              <p class="speaker-role" contenteditable="true" spellcheck="false">Founder, Impor.Club</p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <img class="artwork decor-globe" src="../assets/decor-globe.png" alt="" />
+    </main>
+  </body>
+</html>

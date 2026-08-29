@@ -11,6 +11,12 @@ const rawArgs = process.argv.slice(2);
 const args = new Set(rawArgs);
 const type = args.has("--jpg") ? "jpeg" : "png";
 const extension = type === "jpeg" ? ".jpg" : ".png";
+const scaleArgument = rawArgs.find((argument) => argument.startsWith("--scale="));
+const scale = scaleArgument ? Number(scaleArgument.split("=", 2)[1]) : 2;
+
+if (!Number.isFinite(scale) || scale <= 0) {
+  throw new Error("Render scale must be a positive number, for example --scale=1.");
+}
 const campaignArgument = rawArgs.find((argument) => !argument.startsWith("--"))
   ?? "carousels/niceso/brand-origin";
 const campaignDir = resolve(root, campaignArgument);
@@ -49,7 +55,7 @@ try {
   for (const slide of slides) {
     const context = await browser.newContext({
       viewport: { width: 1080, height: 1350 },
-      deviceScaleFactor: 2,
+      deviceScaleFactor: scale,
     });
     const page = await context.newPage();
     const url = pathToFileURL(join(slidesDir, slide)).href;

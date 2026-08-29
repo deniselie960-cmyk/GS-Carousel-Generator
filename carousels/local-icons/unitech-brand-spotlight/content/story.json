@@ -1,0 +1,30 @@
+{
+  "campaign": "Local Icons — Brand Spotlight — Unitech",
+  "slides": [
+    {
+      "number": "01",
+      "brand": "Unitech",
+      "copy": [
+        "BRAND SPOTLIGHT",
+        "Literally lebih dari sekedar produk — ini journey mereka."
+      ]
+    },
+    {
+      "number": "02",
+      "copy": [
+        "Awal Mula Unitech Indonesia",
+        "Berawal di 2017, Unitech Indonesia hadir dengan satu tujuan: membuat teknologi lebih mudah diakses dan bermanfaat untuk semua.",
+        "Dari produk teknologi dan aksesoris, Unitech terus berkembang mengikuti kebutuhan pengguna untuk bekerja, bermain, dan beraktivitas lebih produktif.",
+        "Unitech Indonesia - Boost Your Productivity"
+      ]
+    },
+    {
+      "number": "03",
+      "type": "product-showcase"
+    },
+    {
+      "number": "04",
+      "type": "product-showcase"
+    }
+  ]
+}

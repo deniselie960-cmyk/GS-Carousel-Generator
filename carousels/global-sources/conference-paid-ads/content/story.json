@@ -1,0 +1,41 @@
+{
+  "campaign": "Conference for Paid Ads",
+  "canvas": {
+    "width": 1080,
+    "height": 1350,
+    "ratio": "4:5"
+  },
+  "sessions": [
+    {
+      "title": "Bikin Brand Kamu Jadi Top of Mind - Building a World-Class Brand: Mastering the Indonesian Market",
+      "time": "13.00 - 14.00",
+      "date": "Kamis, 17 September 2026",
+      "location": "JICC Senayan",
+      "speakers": [
+        { "name": "Fritz Ronald Winata", "role": "Country Manager, SUNRATE Indonesia" },
+        { "name": "Klemens Rahardja", "role": "Founder, The Entrepreneurs Society" }
+      ]
+    },
+    {
+      "title": "Strategi Import Barang Berkualitas dengan Profit Maksimal",
+      "time": "13.00 - 14.00",
+      "date": "Kamis, 17 September 2026",
+      "location": "JICC Senayan",
+      "speakers": [
+        {
+          "name": "Rizkita Bagus Perdhana, S.Kom., M.M., CPS",
+          "role": "Anggota Komtap Marketplace & Ekonomi Kreatif APTIKNAS"
+        }
+      ]
+    },
+    {
+      "title": "MallAPTIKNAS: Beyond the Marketplace - Membangun Ekosistem Digital dan Industri ICT Indonesia",
+      "time": "13.00 - 14.00",
+      "date": "Sabtu, 19 September 2026",
+      "location": "JICC Senayan",
+      "speakers": [
+        { "name": "Naviananda Utama", "role": "Founder, Impor.Club" }
+      ]
+    }
+  ]
+}

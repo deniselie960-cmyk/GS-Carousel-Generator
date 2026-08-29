@@ -1,0 +1,31 @@
+{
+  "campaign": "Local Icons — Brand Spotlight — YMJ",
+  "slides": [
+    {
+      "number": "01",
+      "copy": [
+        "BRAND SPOTLIGHT",
+        "Literally lebih dari sekedar produk — ini journey mereka."
+      ]
+    },
+    {
+      "number": "02",
+      "copy": [
+        "YMJ terinspirasi oleh kekayaan warna alam Indonesia.",
+        "Mewujudkannya dalam satu busana kaya warna memadukan unsur tradisional dengan siluet modern yg menghasilkan koleksi yang elegan dan tak lekang oleh Waktu."
+      ]
+    },
+    {
+      "number": "03",
+      "type": "product-showcase"
+    },
+    {
+      "number": "04",
+      "type": "product-showcase"
+    },
+    {
+      "number": "05",
+      "copy": ["Free Exclusive Goodie Bag di setiap pembelian"]
+    }
+  ]
+}

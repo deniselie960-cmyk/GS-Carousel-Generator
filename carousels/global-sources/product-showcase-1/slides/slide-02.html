@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1080, initial-scale=1">
+  <title>Global Sources — Speaker Portabel</title>
+  <link rel="stylesheet" href="../../../../shared/styles/system.css">
+  <style>
+    .canvas { background: #176dc7; }
+
+    .product-art {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -5;
+    }
+
+    .topbar {
+      position: absolute;
+      top: 34px;
+      left: var(--page-x);
+      right: var(--page-x);
+      width: auto;
+      margin: 0;
+      justify-content: center;
+    }
+
+    .gs-logo {
+      width: 580px;
+      height: 98px;
+      object-position: center;
+    }
+
+    .content {
+      position: absolute;
+      top: 238px;
+      left: var(--page-x);
+      right: var(--page-x);
+      text-align: center;
+    }
+
+    .headline {
+      margin: 0;
+      color: var(--white);
+      font-size: 115px;
+      line-height: 0.92;
+    }
+
+    .headline .highlight {
+      padding: 0;
+      color: var(--white);
+      background: transparent;
+      box-shadow: none;
+    }
+
+    .supplier {
+      margin: 20px 0 0;
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 28px;
+      line-height: 1.35;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+
+    .feature-panel {
+      position: absolute;
+      left: var(--page-x);
+      right: var(--page-x);
+      bottom: 32px;
+      height: 220px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: stretch;
+      overflow: hidden;
+      border-radius: 30px;
+      background: rgba(255, 255, 255, 0.96);
+      border: 1px solid rgba(23, 109, 199, 0.14);
+      box-shadow: 0 18px 44px rgba(20, 43, 92, 0.18);
+    }
+
+    .feature {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 20px;
+      color: var(--primary-dark);
+      text-align: center;
+    }
+
+    .feature + .feature::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 28px;
+      bottom: 28px;
+      width: 1px;
+      background: rgba(23, 109, 199, 0.18);
+    }
+
+    .feature-icon {
+      width: 76px;
+      height: 76px;
+      margin-bottom: 7px;
+      object-fit: contain;
+      filter: brightness(0) saturate(100%) invert(38%) sepia(92%) saturate(1233%) hue-rotate(179deg) brightness(89%) contrast(88%);
+    }
+
+    .feature:first-child .feature-icon,
+    .feature:last-child .feature-icon {
+      width: 82px;
+      height: 82px;
+      margin-bottom: 1px;
+    }
+
+    .feature-title {
+      margin: 0;
+      color: var(--primary-dark);
+      font-size: 24px;
+      line-height: 1.08;
+      font-weight: 900;
+      letter-spacing: -0.025em;
+      text-transform: uppercase;
+    }
+
+    .feature-copy {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 20px;
+      line-height: 1.22;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <main class="canvas">
+    <img class="product-art" src="../assets/electronics-product-slide-02.png" alt="Speaker portabel rugged dengan kait carabiner">
+
+    <header class="topbar">
+      <img class="gs-logo" src="../../../../shared/assets/gs-logo-white.svg" alt="Global Sources Indonesia">
+    </header>
+
+    <section class="content">
+      <h1 class="headline">
+        <span class="highlight">Bluetooth</span>
+        <span class="line">Headset</span>
+      </h1>
+      <p class="supplier">Dongguan Bluetoooth Factory</p>
+    </section>
+
+    <section class="feature-panel" aria-label="Fitur utama produk">
+      <article class="feature">
+        <img class="feature-icon" src="../assets/icon-carabiner.svg" alt="">
+        <h2 class="feature-title">Kait carabiner</h2>
+        <p class="feature-copy">Mudah dibawa ke mana saja</p>
+      </article>
+
+      <article class="feature">
+        <img class="feature-icon" src="../assets/icon-rugged-shield.svg" alt="">
+        <h2 class="feature-title">Bodi rugged</h2>
+        <p class="feature-copy">Kokoh untuk aktivitas harian</p>
+      </article>
+
+      <article class="feature">
+        <img class="feature-icon" src="../assets/icon-travel.svg" alt="">
+        <h2 class="feature-title">Desain ringkas</h2>
+        <p class="feature-copy">Praktis untuk perjalanan</p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

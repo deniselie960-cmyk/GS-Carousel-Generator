@@ -1,0 +1,60 @@
+@font-face{font-family:"Gotham LI";src:local("Gotham Book"),local("Gotham-Book");font-weight:400}
+@font-face{font-family:"Gotham LI";src:local("Gotham Bold"),local("Gotham-Bold");font-weight:700}
+@font-face{font-family:"Gotham LI";src:local("Gotham Black"),local("Gotham-Black");font-weight:900}
+
+:root{
+  --ink:#22211d;
+  --teal:#00c5b2;
+  --purple:#7952f5;
+  --blue:#268cff;
+  --yellow:#ffca22;
+  --paper:#f6f4ef;
+  --white:#fff;
+}
+
+*{box-sizing:border-box}
+html,body{width:1080px;height:1350px;margin:0;overflow:hidden}
+body{font-family:"Gotham LI",Gotham,Arial,sans-serif;color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased}
+
+.canvas{position:relative;width:1080px;height:1350px;overflow:hidden;background:linear-gradient(180deg,#fbfaf7 0%,#f3f1eb 100%);isolation:isolate}
+.corner-art{position:absolute;z-index:-1;display:block;pointer-events:none;user-select:none}
+.corner-art--tl{width:340px;left:-158px;top:-82px}
+.corner-art--tr{width:390px;right:-32px;top:-104px;transform:rotate(180deg)}
+.corner-art--bl{width:440px;left:-28px;bottom:-42px;transform:rotate(180deg)}
+.corner-art--br{width:570px;right:-72px;bottom:-34px}
+
+.frame{position:relative;z-index:2;height:100%;padding:56px 72px 54px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.brand-logo{display:block;width:620px;height:135px;object-fit:contain;object-position:center}
+.tagline{margin:10px 0 26px;font-size:50px;line-height:1.02;font-weight:900;letter-spacing:-.045em;text-align:center}
+
+.logo-wall{position:relative;width:100%;padding:72px 22px 24px;border-radius:36px;background:rgba(255,255,255,.58);border:1px solid rgba(34,33,29,.08);box-shadow:0 24px 60px rgba(34,33,29,.10);backdrop-filter:blur(8px)}
+.brand-count{position:absolute;z-index:5;left:-52px;top:-60px;width:124px;height:124px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;background:var(--blue);box-shadow:0 14px 30px rgba(38,140,255,.25)}
+.brand-count__number{font-size:36px;line-height:.9;font-weight:900;letter-spacing:-.05em}
+.brand-count__label{margin-top:9px;font-family:"Gotham LI",Gotham,Arial,sans-serif;font-size:17px;line-height:1;font-weight:700;font-style:normal}
+.grid{display:grid;width:100%}
+.grid--vip{grid-template-columns:repeat(4,1fr);gap:13px}
+.grid--non{grid-template-columns:repeat(5,1fr);gap:10px;margin-top:22px;padding-top:22px;border-top:1px solid rgba(34,33,29,.14)}
+.logo-card{position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;background:var(--white);border:1px solid rgba(34,33,29,.08);box-shadow:0 8px 20px rgba(34,33,29,.08)}
+.logo-card--vip{height:136px;border-radius:32px}
+.logo-card--non{height:96px;border-radius:26px}
+.logo-card img{display:block;max-width:78%;max-height:68%;object-fit:contain;transform:scale(var(--zoom,1));transform-origin:center}
+.logo-card--non img{max-width:75%;max-height:62%}
+.logo-card--color img{max-width:84%;max-height:78%}
+.logo-card--placeholder{background:linear-gradient(145deg,#fff,#fafafa)}
+.temporary-wordmark{font-size:25px;line-height:1;font-weight:900;letter-spacing:-.045em;color:#303b4d}
+.temporary-wordmark--lumea{font-weight:700;text-transform:lowercase;letter-spacing:.01em;color:#5b536b}
+
+.event{margin-top:38px;text-align:center;display:flex;flex-direction:column;align-items:center}
+.date-pill{margin:0;padding:20px 50px 19px;border-radius:999px;background:var(--ink);color:#fff;font-size:37px;line-height:1;font-weight:900;letter-spacing:-.03em;box-shadow:0 14px 30px rgba(34,33,29,.17)}
+.hall{margin:16px 0 0;font-size:33px;line-height:1;font-weight:900}
+.venue{margin:10px 0 0;font-size:29px;line-height:1.1;font-weight:700;letter-spacing:-.025em}
+
+.zoom-advance{--zoom:1.48}
+.zoom-unitech{--zoom:1.04}
+.zoom-eiger{--zoom:1.95}
+.zoom-youware{--zoom:1.42}
+.zoom-gammara{--zoom:1.42}
+.zoom-hers{--zoom:1.55}
+.zoom-yubi{--zoom:1.7}
+.zoom-visonda{--zoom:1.95}
+.zoom-ymj{--zoom:1.55}

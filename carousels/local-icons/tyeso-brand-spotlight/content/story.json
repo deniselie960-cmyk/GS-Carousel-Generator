@@ -1,0 +1,34 @@
+{
+  "campaign": "Local Icons — Brand Spotlight — TYESO",
+  "slides": [
+    {
+      "number": "01",
+      "copy": [
+        "BRAND SPOTLIGHT",
+        "Literally lebih dari sekedar produk — ini journey mereka."
+      ]
+    },
+    {
+      "number": "02",
+      "copy": [
+        "Founded in 2023, TYESO emerged as a modern tumbler brand focused on combining stylish design, practical functionality, and everyday convenience. From the beginning, TYESO has aimed to create drinkware that fits seamlessly into modern lifestyles-whether for work, travel, fitness, or daily activities."
+      ]
+    },
+    {
+      "number": "03",
+      "type": "product-showcase"
+    },
+    {
+      "number": "04",
+      "type": "product-showcase"
+    },
+    {
+      "number": "05",
+      "copy": [
+        "Diskon 20% All Item.",
+        "Plus, 25 pembeli pertama dapat GRATIS grafir.",
+        "Kehabisan slot gratis? Tenang — grafir tetap diskon 50%, dari 50K jadi cuma 25K."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+@font-face{font-family:"Gotham LI";src:local("Gotham Book"),local("Gotham-Book");font-weight:400}
+@font-face{font-family:"Gotham LI";src:local("Gotham Bold"),local("Gotham-Bold");font-weight:700}
+@font-face{font-family:"Gotham LI";src:local("Gotham Black"),local("Gotham-Black");font-weight:900}
+
+:root{--ink:#22211d;--paper:#fff;--cream:#fff7eb;--sand:#ead1b3;--wine:#8f2726;--teal:#00c5b2;--purple:#7952f5;--blue:#268cff;--yellow:#ffca22}
+*{box-sizing:border-box}
+html,body{width:1080px;height:1350px;margin:0;overflow:hidden}
+body{font-family:"Gotham LI",Gotham,Arial,sans-serif;color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased}
+h1,p,figure{margin:0}
+.canvas{position:relative;width:1080px;height:1350px;overflow:hidden;background:var(--paper);isolation:isolate}
+.frame{position:relative;z-index:3;width:100%;height:100%;padding:62px 72px 68px;display:flex;flex-direction:column}
+.brandbar{position:relative;z-index:10;height:116px;display:flex;align-items:flex-start;flex:0 0 auto}
+.li-horizontal{display:block;width:478px;height:106px;object-fit:contain;object-position:left top}
+.orb{position:absolute;z-index:0;border-radius:50%;pointer-events:none}
+.orb--top{width:330px;height:330px;right:-150px;top:-160px;background:var(--teal)}
+.orb--bottom{width:360px;height:360px;left:-210px;bottom:-220px;background:var(--yellow)}
+.photo{position:absolute;overflow:hidden;border-radius:38px;background:var(--sand);box-shadow:0 24px 54px rgba(43,29,18,.16)}
+.photo img{display:block;width:100%;height:100%;object-fit:cover}
+.accent-rule{width:132px;height:12px;border-radius:99px;background:linear-gradient(90deg,var(--yellow),var(--teal),var(--purple))}
+
+/* 01 */
+.cover{background:var(--paper)}
+.cover::after{content:"";position:absolute;z-index:2;inset:28px;border:1.5px solid rgba(34,33,29,.15);pointer-events:none}
+.cover .orb--top{background:var(--teal)}
+.cover .orb--bottom{background:var(--blue)}
+.cover-stage{position:relative;flex:1}
+.cover-copy{position:absolute;z-index:6;left:0;top:150px;width:540px}
+.eyebrow{font-size:31px;line-height:1;font-weight:900;letter-spacing:.18em}
+.ymj-logo-window{width:420px;height:190px;margin-top:34px;overflow:hidden;border-radius:26px;background:#fff;box-shadow:0 18px 42px rgba(34,33,29,.08)}
+.ymj-logo-window img{display:block;width:420px;height:433px;max-width:none;transform:translateY(-122px);object-fit:fill}
+.cover-title{width:500px;margin-top:38px;font-size:50px;line-height:1.08;font-weight:900;letter-spacing:-.048em}
+.cover-title em{font-style:italic}
+.cover-title span{color:var(--purple)}
+.cover-panel{position:absolute;z-index:1;right:-4px;top:100px;width:430px;height:864px;border-radius:52px;background:linear-gradient(145deg,#f3c9a6,#f8e4ce);transform:rotate(-2deg)}
+.cover-photo{z-index:4;right:10px;top:76px;width:400px;height:880px;transform:rotate(1deg)}
+.cover-photo img{object-position:50% center}
+
+/* 02 */
+.story{background:#fbf7f0}
+.story .orb--top{background:var(--yellow)}
+.story .orb--bottom{background:var(--purple)}
+.story-stage{position:relative;flex:1}
+.story-photo{left:0;top:54px;width:468px;height:988px;transform:rotate(-1deg)}
+.story-photo img{object-position:50% center}
+.story-card{position:absolute;z-index:5;right:0;top:118px;width:430px;padding:46px 40px 48px;border:1px solid rgba(34,33,29,.1);border-radius:38px;background:rgba(255,255,255,.96);box-shadow:0 24px 54px rgba(43,29,18,.12)}
+.story-card .accent-rule{margin-bottom:32px}
+.story-lead{font-size:38px;line-height:1.08;font-weight:900;letter-spacing:-.045em;color:var(--wine)}
+.story-body{margin-top:34px;font-size:26px;line-height:1.38;font-weight:500;letter-spacing:-.022em}
+
+/* 03 and 04 */
+.showcase-one{background:var(--cream)}
+.showcase-one .orb--top{background:var(--teal)}
+.showcase-one .orb--bottom{background:var(--yellow)}
+.showcase-two{background:#fff}
+.showcase-two .orb--top{background:var(--blue)}
+.showcase-two .orb--bottom{background:var(--purple)}
+.showcase-stage{position:relative;flex:1}
+.showcase-heading{position:absolute;z-index:8;left:0;top:48px}
+.showcase-heading h1{font-size:50px;line-height:.98;font-weight:900;letter-spacing:-.055em}
+.showcase-heading h1 span{display:block;color:var(--wine)}
+.showcase-heading .accent-rule{margin-top:24px}
+.showcase-main{left:0;top:56px;width:548px;height:989px;transform:rotate(-1.4deg)}
+.showcase-main img{object-position:50% 48%}
+.showcase-side-a{right:0;top:84px;width:345px;height:500px;transform:rotate(1.6deg)}
+.showcase-side-a img{object-position:50% 45%}
+.showcase-side-b{right:18px;bottom:28px;width:380px;height:505px;transform:rotate(-1.2deg)}
+.showcase-side-b img{object-position:50% 40%}
+.showcase-heading--right{left:auto;right:0;top:40px;width:342px}
+.showcase-heading--right h1 span{color:var(--purple)}
+.duo-main{z-index:4;left:0;top:50px;width:555px;height:995px;transform:rotate(-1.2deg)}
+.duo-main img{object-position:50% center}
+.duo-side{z-index:4;right:0;top:92px;width:355px;height:918px;transform:rotate(1.7deg)}
+.duo-side img{object-position:50% center}
+.duo-accent{position:absolute;z-index:1;right:-12px;top:48px;width:395px;height:1008px;border-radius:48px;background:linear-gradient(150deg,#e8cbb1,#f8ead8);transform:rotate(-1deg)}
+
+/* 05 */
+.offer{background:#fbf7f0}
+.offer .orb--top{background:var(--purple)}
+.offer .orb--bottom{background:var(--teal)}
+.offer-stage{position:relative;flex:1}
+.offer-card{position:absolute;z-index:5;left:0;top:112px;width:560px;height:790px;padding:78px 58px;border-radius:48px;background:var(--purple);color:#fff;box-shadow:0 28px 60px rgba(76,45,166,.22);overflow:hidden}
+.offer-card p{position:relative;z-index:3;font-size:52px;line-height:1.05;font-weight:900;letter-spacing:-.05em}
+.offer-card p span{display:inline-block;margin:14px 0 18px;color:var(--yellow);font-size:72px;line-height:.92}
+.offer-ring{position:absolute;right:-135px;bottom:-138px;width:380px;height:380px;border:44px solid rgba(255,255,255,.12);border-radius:50%}
+.offer-photo{z-index:4;right:0;top:55px;width:390px;height:760px;transform:rotate(1.5deg)}
+.offer-photo img{object-position:50% 47%}
+.offer-logo{position:absolute;z-index:7;right:8px;bottom:78px;width:372px;height:166px;overflow:hidden;border-radius:28px;background:#fff;box-shadow:0 18px 42px rgba(34,33,29,.14)}
+.offer-logo img{display:block;width:372px;height:383px;max-width:none;transform:translateY(-108px);object-fit:fill}

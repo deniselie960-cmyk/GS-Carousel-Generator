@@ -1,0 +1,77 @@
+@font-face{font-family:"Gotham LI";src:local("Gotham Book"),local("Gotham-Book");font-weight:400}
+@font-face{font-family:"Gotham LI";src:local("Gotham Bold"),local("Gotham-Bold");font-weight:700}
+@font-face{font-family:"Gotham LI";src:local("Gotham Black"),local("Gotham-Black");font-weight:900}
+
+:root{--ink:#22211d;--paper:#fff;--cream:#fff9ed;--teal:#00c5b2;--purple:#7952f5;--blue:#268cff;--yellow:#ffca22;--unitech:#2495cf;--unitech-deep:#087ab5}
+*{box-sizing:border-box}
+html,body{width:1080px;height:1350px;margin:0;overflow:hidden}
+body{font-family:"Gotham LI",Gotham,Arial,sans-serif;color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased}
+h1,h2,p,figure{margin:0}
+.canvas{position:relative;width:1080px;height:1350px;overflow:hidden;background:var(--paper);isolation:isolate}
+.frame{position:relative;z-index:3;width:100%;height:100%;padding:62px 72px 68px;display:flex;flex-direction:column}
+.brandbar{position:relative;z-index:20;height:112px;display:flex;align-items:flex-start;flex:0 0 auto}
+.li-horizontal{display:block;width:478px;height:106px;object-fit:contain;object-position:left top}
+.orb{position:absolute;z-index:0;border-radius:50%;pointer-events:none}
+.orb--top{width:340px;height:340px;right:-165px;top:-175px}
+.orb--bottom{width:420px;height:300px;left:-225px;bottom:-150px;transform:rotate(12deg)}
+.accent-rule{height:12px;border-radius:99px;background:linear-gradient(90deg,var(--unitech),var(--teal),var(--purple))}
+.product-card{position:absolute;z-index:5;overflow:hidden;border-radius:40px;background:#fff;border:1.5px solid rgba(34,33,29,.10);box-shadow:0 25px 58px rgba(34,33,29,.13)}
+.product-card::after{content:"";position:absolute;inset:14px;border:1.5px solid rgba(36,149,207,.12);border-radius:29px;pointer-events:none}
+.product-card img{display:block;width:100%;height:100%;object-fit:contain}
+
+/* Slide 01 */
+.cover{background:linear-gradient(150deg,#fff 0%,#fff 64%,#f2fbff 100%)}
+.cover::after{content:"";position:absolute;z-index:10;inset:28px;border:1.5px solid rgba(34,33,29,.14);pointer-events:none}
+.cover .orb--top{background:var(--teal)}
+.cover .orb--bottom{background:var(--purple)}
+.cover-main{position:relative;flex:1}
+.cover-copy{position:absolute;z-index:8;left:0;top:235px;width:535px;text-align:center}
+.cover-eyebrow{font-size:30px;line-height:1;font-weight:900;letter-spacing:.17em}
+.logo-window{position:relative;width:430px;height:190px;margin:35px auto 0;overflow:hidden;border-radius:32px;background:#fff;border:1px solid rgba(34,33,29,.08);box-shadow:0 18px 42px rgba(34,33,29,.10)}
+.logo-window img{position:absolute;width:470px;height:auto;left:50%;top:50%;transform:translate(-50%,-50%)}
+.cover-statement{width:535px;margin-top:40px;font-size:50px;line-height:1.07;font-weight:900;letter-spacing:-.048em;text-align:center}
+.cover-statement .literally{font-style:italic}
+.cover-statement .accent{color:var(--unitech-deep)}
+.hero-back{position:absolute;z-index:2;right:-52px;top:82px;width:430px;height:910px;border-radius:58px;background:linear-gradient(160deg,#dff8ff,#bcecf7 52%,#9cddf1);transform:rotate(2deg)}
+.cover-hero{right:-28px;top:118px;width:385px;height:830px;transform:rotate(-1deg)}
+.cover-hero img{object-fit:contain;transform:scale(1.55)}
+.cover-index{position:absolute;z-index:12;left:72px;bottom:79px;width:76px;height:14px;border-radius:99px;background:linear-gradient(90deg,var(--unitech),var(--teal),var(--purple))}
+
+/* Slide 02 */
+.story{background:var(--cream)}
+.story .orb--top{background:var(--yellow)}
+.story .orb--bottom{background:var(--blue)}
+.story-layout{position:relative;flex:1;padding-top:42px}
+.story-copy{position:relative;z-index:8;width:100%;height:100%}
+.story-title{width:800px;font-size:64px;line-height:.98;font-weight:900;letter-spacing:-.055em}
+.story-copy>.accent-rule{width:138px;margin-top:25px}
+.story-body{position:absolute;z-index:8;left:0;right:0;top:580px;display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.story-card{min-height:300px;padding:34px 35px 32px;border-radius:34px;background:#fff;border:1.5px solid rgba(34,33,29,.08);box-shadow:0 18px 38px rgba(34,33,29,.08)}
+.story-card:nth-child(2){background:#eaf9ff;border-color:rgba(36,149,207,.16)}
+.story-body p{font-size:25px;line-height:1.37;font-weight:500;letter-spacing:-.025em}
+.story-body strong{font-weight:900;color:var(--unitech-deep)}
+.story-line{position:absolute;z-index:9;left:0;right:0;bottom:8px;padding:22px 34px 20px;border-radius:999px;background:var(--unitech-deep);color:#fff;text-align:center;font-size:27px;line-height:1.1;font-weight:900;box-shadow:0 16px 34px rgba(8,122,181,.22)}
+.keyboard-stage{position:absolute;z-index:5;left:0;right:0;top:205px;height:335px;border-radius:42px;background:linear-gradient(135deg,#fff 0%,#eefaff 100%);border:1.5px solid rgba(36,149,207,.14);box-shadow:0 22px 48px rgba(34,33,29,.11);overflow:hidden}
+.keyboard-stage::after{content:"";position:absolute;left:42px;right:42px;bottom:28px;height:18px;border-radius:50%;background:rgba(34,33,29,.12);filter:blur(16px)}
+.keyboard-stage img{position:absolute;z-index:2;width:870px;height:auto;left:50%;top:50%;transform:translate(-50%,-49%)}
+
+/* Slides 03–04 */
+.showcase .orb--top{background:var(--teal)}
+.showcase .orb--bottom{background:var(--yellow)}
+.showcase.alt{background:var(--cream)}
+.showcase.alt .orb--top{background:var(--purple)}
+.showcase.alt .orb--bottom{background:var(--blue)}
+.showcase-layout{position:relative;flex:1}
+.mousepad-card{left:0;top:56px;width:936px;height:590px;transform:rotate(-.7deg)}
+.mousepad-card img{object-fit:cover}
+.keyboard-card{left:0;bottom:22px;width:585px;height:388px;transform:rotate(1deg)}
+.keyboard-card img{padding:18px}
+.mouse-card{right:0;bottom:4px;width:315px;height:460px;transform:rotate(-1.5deg)}
+.mouse-card img{transform:scale(1.5)}
+.showcase-ring{position:absolute;z-index:3;right:190px;bottom:292px;width:180px;height:180px;border:28px solid var(--teal);border-radius:50%;opacity:.18}
+.gamepad-card{left:0;top:68px;width:620px;height:845px;transform:rotate(-1.2deg)}
+.gamepad-card img{transform:scale(1.3)}
+.hub-card{right:0;top:238px;width:355px;height:700px;transform:rotate(1.8deg)}
+.hub-card img{transform:scale(1.58)}
+.final-panel{position:absolute;z-index:2;left:30px;right:-32px;top:115px;height:875px;border-radius:56px;background:linear-gradient(145deg,#e8faff 0%,#cceff8 55%,#b9e3f3 100%);transform:rotate(.8deg)}
+.final-line{position:absolute;z-index:4;left:38px;right:38px;bottom:26px;height:16px;border-radius:99px;background:linear-gradient(90deg,var(--unitech),var(--teal),var(--purple),var(--yellow))}

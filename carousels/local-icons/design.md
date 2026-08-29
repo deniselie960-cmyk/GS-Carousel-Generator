@@ -94,6 +94,65 @@ The key visual uses large, soft, inflated organic forms that enter from the edge
 - Use a slight rotation on isolated product placeholders or accent tiles only when it adds energy.
 - Avoid mixing hard polygons, thin technical line art, and unrelated illustration styles with the soft Local Icons geometry.
 
+### Approved dimensional ellipse corner frame
+
+For event posts that need a more dimensional key-visual frame, use the approved transparent ellipse PNG assets instead of rebuilding the corner shapes as flat CSS circles. The current approved source set is stored with the `logo-wall-september-2026` campaign.
+
+Use this four-corner configuration:
+
+- **Top-left:** `ellips-6.png`, cropped heavily so one teal dimensional lobe enters from the corner. Keep most of the artwork outside the canvas.
+- **Top-right:** `ellips-5.png`, rotated `180deg`, moved upward until there is no visible gap along the top edge, and shifted left enough to reveal the curved purple return along the right edge.
+- **Bottom-left:** `ellips-3.png`, rotated `180deg` and shifted right so the ornament's right-hand contour is visible rather than reading as a narrow color strip.
+- **Bottom-right:** `ellips-1.png`, scaled down and shifted left to show the layered blue ellipse with the yellow foreground forms. Keep the event information clear.
+
+Approved working placement for a `1080 × 1350px` canvas:
+
+```css
+.corner-art {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+}
+
+.corner-art--tl {
+  width: 340px;
+  left: -158px;
+  top: -82px;
+}
+
+.corner-art--tr {
+  width: 390px;
+  right: -32px;
+  top: -104px;
+  transform: rotate(180deg);
+}
+
+.corner-art--bl {
+  width: 440px;
+  left: -28px;
+  bottom: -42px;
+  transform: rotate(180deg);
+}
+
+.corner-art--br {
+  width: 570px;
+  right: -72px;
+  bottom: -34px;
+}
+```
+
+Placement rules:
+
+- Preserve each PNG's native colors, gradients, transparency, and proportions.
+- Rotation, scale, and cropping are allowed; stretching or recoloring is not.
+- The purple top-right form must meet the top edge with no white gap.
+- Keep the top ornaments restrained and reserve the more layered visual weight for the bottom edge.
+- Do not mix this configuration with the older flat corner circles or decorative dots on the same post.
+- Keep all dimensional ellipses behind the primary logo, headline, logo wall, dates, venue, and other essential content.
+- Minor position adjustments are acceptable when content density changes, but preserve the same visual balance: teal upper-left, purple upper-right, yellow lower-left, and layered blue/yellow lower-right.
+
 ### Depth
 
 - Use restrained shadows on white cards: soft, wide, and low-opacity.
@@ -141,7 +200,7 @@ Use Gotham where available, with `Arial` or a close geometric sans-serif only as
 
 ### Global Sources relationship
 
-- Use the approved co-branded lockup containing `Presented by: Global Sources` and the three Indonesia pavilion show marks when the campaign requires event attribution.
+- Use the approved co-branded lockup containing `Indonesia Pavilions by` and the three Indonesia pavilion show marks when the campaign requires event attribution.
 - Preserve the show order: Electronics → Home Appliances → Gifts & Home.
 - Never reconstruct or retype the Global Sources or show logos from the key visual.
 - On a cover, the co-brand may be prominent. On interior slides, keep it in a consistent header position and let the content headline lead.
@@ -176,6 +235,8 @@ Use one of four layout modes per slide.
 
 - Center or optically balance the primary Local Icons lockup.
 - Place the campaign line below it with ample space.
+- On a featured-brand cover, treat the eyebrow, featured-brand logo, and headline/tagline as one composition stack. Vertically center that complete stack within the usable cover area or against the hero image; do not position the logo and headline independently with unrelated fixed `top` values.
+- Keep the featured-brand logo through the final headline line on one shared vertical rhythm. A practical implementation is a single wrapper positioned at `top: 50%` with `transform: translateY(-50%)`, followed by optical adjustment only when the image carries uneven visual weight.
 - Use a single black pill for the swipe cue, date, or main CTA.
 - Keep decorative corner forms large and cropped.
 
@@ -303,6 +364,7 @@ Use these as a starting point for new Local Icons campaigns. Campaign CSS may re
 - [ ] The approved Local Icons lockup is used without alteration.
 - [ ] Global Sources and the three show marks are intact, in the approved order, and legible.
 - [ ] The logo has clear space and aligns with the main composition.
+- [ ] On featured-brand covers, the eyebrow, featured-brand logo, and complete headline form one vertically centered composition stack.
 - [ ] Primary text and logos do not overlap photographs or other primary content blocks, with at least `32px` of visible separation and preferably `48–72px` between major elements.
 - [ ] White remains the dominant field on standard information slides.
 - [ ] Teal and purple lead the accent system; blue and yellow support it.
